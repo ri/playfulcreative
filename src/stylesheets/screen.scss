@@ -203,14 +203,18 @@ body {
   }/* end container */
 }/* end body*/
 
-a, p {
+a {
   text-decoration: none;
   img { border: none; }
   font: {
   family: 'PetitaLight';
   size: 1.2em;
   }
-};
+}
+
+p { 
+  font-family: "PetitaMedium"; 
+}
 
 #loader {
   height: 20px;
@@ -282,4 +286,18 @@ section {
   .col4 {width: ($grid-unit*4) - 10}
   .half {height: 110px;}
 
+}
+
+section#about
+{
+  img {
+    float: left;
+  }
+  p {
+    width: 750px;
+    line-height: 1.5em;
+    float: right;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
 }
