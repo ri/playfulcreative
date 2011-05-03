@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'PetitaLight';
+  src: url('/fonts/petitalight-webfont.eot');
+  src: url('/fonts/petitalight-webfont.eot?iefix') format('eot'),
+       url('/fonts/petitalight-webfont.woff') format('woff'),
+       url('/fonts/petitalight-webfont.ttf') format('truetype'),
+       url('/fonts/petitalight-webfont.svg#webfontZe3tUONA') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PetitaMedium';
+  src: url('/fonts/petitamedium-webfont.eot');
+  src: url('/fonts/petitamedium-webfont.eot?iefix') format('eot'),
+       url('/fonts/petitamedium-webfont.woff') format('woff'),
+       url('/fonts/petitamedium-webfont.ttf') format('truetype'),
+       url('/fonts/petitamedium-webfont.svg#webfontT3WXDf5I') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Swingdancer';
+  src: url('/fonts/swingdancer-webfont.eot');
+  src: url('/fonts/swingdancer-webfont.eot?iefix') format('eot'),
+       url('/fonts/swingdancer-webfont.woff') format('woff'),
+       url('/fonts/swingdancer-webfont.ttf') format('truetype'),
+       url('/fonts/swingdancer-webfont.svg#webfontwyhj9U4w') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

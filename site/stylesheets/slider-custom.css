@@ -1,0 +1,85 @@
+/* line 1 */
+#slider {
+  background: url(/images/loading.gif) no-repeat 50% 50%;
+}
+
+/* line 4 */
+#slider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+/* line 10 */
+#slider a {
+  border: 0;
+  display: block;
+}
+
+/* line 15 */
+.nivo-controlNav {
+  position: absolute;
+  bottom: -30px;
+  left: 400px;
+}
+
+/* line 20 */
+.nivo-controlNav a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(/images/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+
+/* line 30 */
+.nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+
+/* line 35 */
+.nivo-directionNav a {
+  position: absolute;
+  top: 150px;
+  display: block;
+  width: 45px;
+  height: 85px;
+  background: url(/images/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+/* line 45 */
+.nivo-directionNav a:hover {
+  background-position: 0 -85px;
+}
+
+/* line 50 */
+a.nivo-nextNav {
+  background-position: -45px 0;
+  right: -45px;
+}
+/* line 54 */
+a.nivo-nextNav:hover {
+  background-position: -45px -85px;
+}
+
+/* line 58 */
+a.nivo-prevNav {
+  left: -45px;
+}
+
+/* line 62 */
+.nivo-caption {
+  text-shadow: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 66 */
+.nivo-caption a {
+  color: #efe9d1;
+  text-decoration: underline;
+}
