@@ -21,6 +21,7 @@
   <link href='/stylesheets/isotope.css' rel='stylesheet' />
   <link href='/stylesheets/slider-custom.css' rel='stylesheet' />
   <link href='/fancybox/jquery.fancybox-1.3.4.css' rel='stylesheet' />
+  <script src='fancybox/jquery.fancybox-1.3.4.pack.js'></script>
 </head>
 <body>
   <div id='container'>
@@ -59,7 +60,26 @@
         <h1>Interaction</h1>
       </section>
     </div>
-    <footer>
+    <div id='push'></div>
+  </div>
+  <footer>
+    <div id='contact'>
+      <ul>
+        <li class='email'>
+          <img src='/images/envelope.png' />
+          <a href='mailto:ri@playfulcreative.com'>
+            <span>ri@playfulcreative.com</span>
+          </a>
+        </li>
+        <li class='twitter'>
+          <img src='/images/twitterbird.png' />
+          <a href='http://www.twitter.com/riblah'>
+            <span>@riblah</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id='attribution'>
       Designed and Coded up in
       <span class='highlight1'>
         HTML5
@@ -70,9 +90,9 @@
       </span>
       by
       Ri Liu
-    </footer>
+    </div>
     <!-- window.jQuery(function() { $('#works').css('visibility', 'hidden'); }); -->
-  </div>
+  </footer>
   <script type='text/javascript'>
     //<![CDATA[
       document.getElementById("works").style.visibility = "hidden";
@@ -91,7 +111,6 @@
   <script src='js/libs/jquery.isotope.js'></script>
   <script src='js/libs/jquery.isotope.min.js'></script>
   <script src='fancybox/jquery.mousewheel-3.0.4.pack.js'></script>
-  <script src='fancybox/jquery.fancybox-1.3.4.pack.js'></script>
   <script src='js/script.js'></script>
   <!--[if lt IE 7 ]>
     <script src='js/libs/dd_belatedpng.js'></script>
