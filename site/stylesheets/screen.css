@@ -211,17 +211,22 @@ body #container footer {
 
 /* end body*/
 /* line 206 */
-a, p {
+a {
   text-decoration: none;
   font-family: 'PetitaLight';
   font-size: 1.2em;
 }
 /* line 208 */
-a img, p img {
+a img {
   border: none;
 }
 
 /* line 215 */
+p {
+  font-family: "PetitaMedium";
+}
+
+/* line 219 */
 #loader {
   height: 20px;
   background: url("/images/loading.gif") no-repeat 50% 50%;
@@ -229,21 +234,21 @@ a img, p img {
   display: none;
 }
 
-/* line 223 */
+/* line 227 */
 .highlight1 {
   color: #cc2a41;
 }
 
-/* line 227 */
+/* line 231 */
 .highlight2 {
   color: #64908a;
 }
 
-/* line 231 */
+/* line 235 */
 section {
   clear: both;
 }
-/* line 232 */
+/* line 236 */
 section h1 {
   font-family: "PetitaLight";
   text-align: center;
@@ -255,18 +260,18 @@ section h1 {
   font-weight: normal;
   font-size: 2.6em;
 }
-/* line 246 */
+/* line 250 */
 section #filters {
   text-align: center;
   margin: 10px 0;
   list-style-type: none;
   clear: both;
 }
-/* line 251 */
+/* line 255 */
 section #filters li {
   display: inline;
 }
-/* line 256 */
+/* line 260 */
 section .work {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -275,7 +280,7 @@ section .work {
   height: 230px;
   overflow: hidden;
 }
-/* line 264 */
+/* line 268 */
 section .work img {
   padding: 0;
   margin: 0;
@@ -284,7 +289,7 @@ section .work img {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 273 */
+/* line 277 */
 section .work img:hover {
   width: 100%;
   /*apparently needed for opacity in ie 5-7*/
@@ -292,19 +297,32 @@ section .work img:hover {
   -moz-opacity: 0.7;
   opacity: 0.7;
 }
-/* line 280 */
+/* line 284 */
 section .col1 {
   width: 110px;
 }
-/* line 281 */
+/* line 285 */
 section .col2 {
   width: 230px;
 }
-/* line 282 */
+/* line 286 */
 section .col4 {
   width: 470px;
 }
-/* line 283 */
+/* line 287 */
 section .half {
   height: 110px;
+}
+
+/* line 293 */
+section#about img {
+  float: left;
+}
+/* line 296 */
+section#about p {
+  width: 750px;
+  line-height: 1.5em;
+  float: right;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }

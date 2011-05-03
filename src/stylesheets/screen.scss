@@ -5,8 +5,10 @@ $grid-unit: 120px;
 
 /* colours */
 $grey-dark-blue: #424254;
+$dark-blue-hover: #2c2c50;
 $red: #cc2a41;
 $teal: #64908a;
+$teal-hover: #2b7369;
 $beige: #e8caa4;
 /* end colours */
 
@@ -30,6 +32,16 @@ $about-whole: 200px;
 $about-half: $about-whole/2;
 $about-border-values: 0 0 $about-half $about-half;
 $about-margin: -90px;
+
+$email-whole: 260px;
+$email-half: $inspiration-whole/2;
+$email-border-values: $inspiration-half $inspiration-half 0 0;
+$email-margin: 0px;
+
+$twitter-whole: 180px;
+$twitter-half: $twitter-whole/2;
+$twitter-border-values: $twitter-half $twitter-half 0 0;
+$twitter-margin: -50px;
 /*bubble values*/
 
 body {
@@ -38,7 +50,7 @@ body {
     url('/images/stripe.png') repeat-x,
     url('/images/bgtex.jpg');
   
-  #container {
+  #container, footer{
     width: $content-width;
     margin: 0 auto;
     
@@ -120,7 +132,7 @@ body {
               border-radius: $interaction-border-values;
 
               &:hover  {
-                background-color: #2c2c50;
+                background-color: $dark-blue-hover;
               }
               
               span {top: 10px; left: 44px;}
@@ -137,7 +149,7 @@ body {
                border-radius: $inspiration-border-values;
                 
                  &:hover  {
-                   background-color: #2b7369;
+                   background-color: $teal-hover;
                  }
                  
                  span {top: 10px; left: 120px;}
@@ -179,6 +191,7 @@ body {
           height: 480px;
           margin: 0 auto;
           padding-top: 1px;
+          margin-bottom: 80px;
           background: url('/images/darkbgtex.png');
           section {
             position: relative;
@@ -188,19 +201,113 @@ body {
             background:url('/images/loading.gif') no-repeat 50% 50%;
           }
         }
-      }/*end main*/
-      footer {
-        display: block;
-        clear: both;
-        padding: 20px 0 10px 0;
-        font: {
-          family: 'PetitaMedium';
-          size: 0.9em
-        }
-        color: $grey-dark-blue;
-      }
+      }/*end main*/      
     
   }/* end container */
+  footer {
+    position: relative;
+    display: block;
+    z-index: 10;
+    font: {
+      family: 'PetitaMedium';
+      size: 0.9em
+    }
+    color: $grey-dark-blue;
+    
+    #attribution {
+      position: absolute;
+      right: 0px;
+      bottom: 10px;
+      
+    }
+    ul {
+      li {
+        display: inline;
+        a {
+          float: left;
+          display: block;
+          position: relative;
+          color: #fff;
+          -webkit-transition: background-color 0.3s ease;
+          -moz-transition: background-color 0.3s ease;
+          -o-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+
+          font: {
+            family: 'PetitaLight';
+            size: 1.3em;
+          }
+
+          span {display: block; position: absolute;}
+          } /*end a*/
+        a:hover {
+          color: #fff;
+        }
+        
+        img
+        {
+          position: absolute;
+          z-index: 20;
+          margin: 0;
+          padding: 0;
+        }
+        
+        &.email {
+          img {
+            top: -80px;
+            left: 90px;
+          }
+          
+          a {
+            background-color: $grey-dark-blue;
+            height: $email-half;
+            width: $email-whole;
+            margin-left: $email-margin;
+            z-index: 2;
+            -moz-border-radius: $email-border-values;
+            -webkit-border-radius: $email-border-values;
+            border-radius: $email-border-values;
+          
+             &:hover  {
+              background-color: $dark-blue-hover;
+             }
+
+             span {
+               bottom: 20px;
+               left: 60px;
+             }
+            }
+        }
+        &.twitter {
+          img {
+            top: -22px;
+            left: 282px;
+          }
+          a {
+            background-color: $teal;
+            height: $twitter-half;
+            width: $twitter-whole;
+            margin-left: $twitter-margin;
+            margin-top: 40px;
+            z-index: 1;
+            -moz-border-radius: $twitter-border-values;
+            -webkit-border-radius: $twitter-border-values;
+            border-radius: $twitter-border-values;
+
+            &:hover  {
+              background-color: $teal-hover;
+            }
+
+            span {
+              bottom: 20px;
+              left:80px;
+            }
+            }
+        }
+          
+        }/*end li*/
+      }/*end ul*/
+  }
 }/* end body*/
 
 a {
@@ -300,4 +407,20 @@ section#about
     font-size: 1.2em;
     margin-bottom: 10px;
   }
+}
+
+/* sticky footer styles */
+$footer-height: 120px;
+
+html, body { height: 100%;}
+#container { 
+  min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto ($footer-height*-1)
+	}
+
+footer, #push {
+  height: $footer-height;
+  clear: both;
 }
