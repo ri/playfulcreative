@@ -15,13 +15,15 @@
   %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
   %link{ :rel => "shortcut icon", :href => "/favicon.ico"}
   %link{ :rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
-  %link{ :rel => "stylesheet", :href => "/stylesheets/screen.css"}
   %link{ :rel => "stylesheet", :href => "/stylesheets/boilerplate.css"}
+  %link{ :rel => "stylesheet", :href => "/stylesheets/screen.css"}
   %link{ :rel => "stylesheet", :href => "/stylesheets/fonts.css"}
   %link{ :rel => "stylesheet", :href => "/stylesheets/nivo-slider.css"}
   %link{ :rel => "stylesheet", :href => "/stylesheets/isotope.css"}
   %link{ :rel => "stylesheet", :href => "/stylesheets/slider-custom.css"}
   %link{ :rel => "stylesheet", :href => "/fancybox/jquery.fancybox-1.3.4.css"}
+  - if current_page == "/interaction.html"
+    %link{ :rel => "stylesheet", :href => "/stylesheets/interaction-process.css"}
 %body
   #bgstripe
 

@@ -1,16 +1,4 @@
-/*dimensions */
-$content-width: 960px;
-$grid-unit: 120px;
-/* end dimensions */
-
-/* colours */
-$grey-dark-blue: #424254;
-$dark-blue-hover: #2c2c50;
-$red: #cc2a41;
-$teal: #64908a;
-$teal-hover: #2b7369;
-$beige: #e8caa4;
-/* end colours */
+@import "global.scss";
 
 /*bubble values*/
 $visual-whole: 220px;
@@ -44,8 +32,9 @@ $twitter-border-values: $twitter-half $twitter-half 0 0;
 $twitter-margin: -50px;
 /*bubble values*/
 
+/* global layout*/
 body {
-  background: url('/images/bgtex.jpg'); /*for the poopy browsers*/
+  background: url('/images/bgtex.jpg');
   
   #bgstripe {
     background: url('/images/stripe.png') repeat-x;
@@ -59,17 +48,17 @@ body {
   }
     
   header {
-    height: 120px;
+    height: 110px;
     a {
       font-size: 1em;
       width: 250px;
       height: 80px;
       display: block;
       color: $grey-dark-blue;
-      -webkit-transition: color 0.3s ease;
-      -moz-transition: color 0.3s ease;
-      -o-transition: color 0.3s ease;
-      transition: color 0.3s ease;
+      -webkit-transition: color 0.2s ease;
+      -moz-transition: color 0.2s ease;
+      -o-transition: color 0.2s ease;
+      transition: color 0.2s ease;
       
       h1 {
         height: 80px;
@@ -96,10 +85,10 @@ body {
           display: block;
           position: relative;
           color: #fff;
-          -webkit-transition: background-color 0.3s ease;
-          -moz-transition: background-color 0.3s ease;
-          -o-transition: background-color 0.3s ease;
-          transition: background-color 0.3s ease;
+          -webkit-transition: background-color 0.2s ease;
+          -moz-transition: background-color 0.2s ease;
+          -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
           
           font: {
             family: 'PetitaLight';
@@ -176,35 +165,55 @@ body {
       }/*end ul*/
     }/*end nav*/
     
-  #main {
-    h1#welcome {
-      color: $grey-dark-blue;
-      font: {
-        family: 'PetitaLight';
-        weight: normal;
-        size: 2.5em;}
-      margin:40px 0 20px 30px;
-      width: 700px;
+  div#main {
+    section {
+      font-family: "PetitaMedium";
       
-    .highlight { font-size: 1.7em;}
-      
-    } /*end h1*/
-    #sliderwrapper {
-      width: 890px;
-      height: 480px;
-      margin: 0 auto;
-      padding-top: 1px;
-      margin-bottom: 80px;
-      background: url('/images/darkbgtex.png');
       section {
-        position: relative;
-        margin: 15px;
-        width: 860px;
-        height: 430px;
-        background:url('/images/loading.gif') no-repeat 50% 50%;
+        padding: 20px 0;
       }
-    }
-  }/*end main*/      
+            
+      h1 {
+        font-family: "PetitaLight";
+        text-align: center;
+        margin: 0px auto 20px auto;
+        padding-top: 40px;
+        width: 200px;
+        border-bottom: 1px solid #9e9e9e;
+        color: $grey-dark-blue;
+        font: {
+          weight: normal;
+          size: 2.6em;
+        };  
+      }
+      
+      h2 {
+        font-family: "PetitaBold";
+        text-transform: uppercase;
+        font-size: 1.8em;
+        font-weight: normal;
+        color: $teal;
+        padding-bottom: 15px;
+      }
+      
+      h3 {
+        font-family: "PetitaBold";
+        font-weight: normal;
+        color: $red;
+        font-size: 1.6em;
+        line-height: 2em;
+      }
+      
+      p {
+        font-size: 1.2em;
+      }
+      
+      hr
+      {
+        clear: both;
+      }
+    } /* end section */
+  } /* end main */    
     
   footer {
     margin: 0 auto;
@@ -233,10 +242,10 @@ body {
           display: block;
           position: relative;
           color: #fff;
-          -webkit-transition: background-color 0.3s ease;
-          -moz-transition: background-color 0.3s ease;
-          -o-transition: background-color 0.3s ease;
-          transition: background-color 0.3s ease;
+          -webkit-transition: background-color 0.2s ease;
+          -moz-transition: background-color 0.2s ease;
+          -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
 
           font: {
             family: 'PetitaLight';
@@ -316,7 +325,146 @@ body {
       }/*end ul*/
   }
 }/* end body*/
+/* end global layout */
 
+/* specific page layouts */
+#main {
+  /* home page */
+  h1#welcome {
+    color: $grey-dark-blue;
+    font: {
+      family: 'PetitaLight';
+      weight: normal;
+      size: 2.5em;}
+    margin:40px 0 20px 30px;
+    width: 700px;
+    
+  .highlight { font-size: 1.7em;}
+    
+  } /*end h1*/
+  #sliderwrapper {
+    width: 890px;
+    height: 480px;
+    margin: 0 auto;
+    padding-top: 1px;
+    margin-bottom: 80px;
+    background: url('/images/darkbgtex.png');
+    section {
+      position: relative;
+      margin: 15px;
+      width: 860px;
+      height: 430px;
+      background:url('/images/loading.gif') no-repeat 50% 50%;
+    }
+  }  
+  /*end home page*/
+  
+  /* visual */
+  section#portfolio {
+    padding-bottom: 40px;
+    #filters
+    {
+      text-align: center;
+      margin: 10px 0;
+      list-style-type: none;
+      clear: both;
+      li {display: inline;
+      }
+    }
+    
+    #works {
+      .work{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        background-color: $red;
+        height: 230px;
+        overflow: hidden;
+
+        img {
+          padding: 0;
+          margin: 0;
+          -webkit-transition: opacity 0.2s ease;
+          -moz-transition: opacity 0.2s ease;
+          -o-transition: opacity 0.2s ease;
+          transition: opacity 0.2s ease;
+          }
+        img:hover
+        {
+          width: 100%; /*apparently needed for opacity in ie 5-7*/
+          filter: alpha(opacity=70);
+          -moz-opacity:0.7;
+          opacity: 0.7;
+        }
+      }
+      .col1 {width: $grid-unit - 10}
+      .col2 {width: ($grid-unit*2) - 10}
+      .col4 {width: ($grid-unit*4) - 10}
+      .half {height: 110px;}
+    }
+  }
+  /* end visual*/
+  
+  /* interaction */
+  section#interaction {
+    nav {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: $red;
+    }
+  }
+  /* end interaction */
+  
+  /* inspiration */
+  section#inspiration {
+    p {text-align: center;}
+  }
+  
+  /* about */
+  section#about
+  {
+    section#short-bio {
+      img {
+        float: left;
+        padding-bottom: 20px;
+      }
+      p {
+        width: 750px;
+        line-height: 1.5em;
+        float: right;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+    section#interaction-designer {
+      img {
+        float: right;
+        padding-bottom: 20px;
+      }
+      p
+      {
+        width: 300px;
+        float: left;
+      }
+      ul {
+        font-size: 1.2em;
+        list-style-image: url('/images/bullet.png');
+        li { padding: 16pt 0;}
+      }
+    }
+    section#background
+    {
+      p {padding-bottom: 10px;
+        margin-left: 20px;}
+    }
+  }
+  /* end about */
+}
+/* end specific page layouts */  
+  
 a {
   text-decoration: none;
   img { border: none; }
@@ -328,7 +476,7 @@ a {
 }
 
 p { 
-  font-family: "PetitaMedium"; 
+  font-family: "PetitaMedium";
 }
 
 #loader {
@@ -347,75 +495,6 @@ p {
   color: $teal;
 }
 
-section {
-  h1 {
-    font-family: "PetitaLight";
-    text-align: center;
-    margin: 0px auto 20px auto;
-    padding-top: 40px;
-    width: 200px;
-    border-bottom: 1px solid #9e9e9e;
-    color: $grey-dark-blue;
-    font: {
-      weight: normal;
-      size: 2.6em;
-    };    
-  }
-  #filters
-  {
-    text-align: center;
-    margin: 10px 0;
-    list-style-type: none;
-    clear: both;
-    li {display: inline;
-    }
-  }
-
-  clear: both;
-  .work{
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 0;
-    background-color: $red;
-    height: 230px;
-    overflow: hidden;
-    
-    img {
-      padding: 0;
-      margin: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -moz-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease;
-      }
-    img:hover
-    {
-      width: 100%; /*apparently needed for opacity in ie 5-7*/
-      filter: alpha(opacity=70);
-      -moz-opacity:0.7;
-      opacity: 0.7;
-    }
-  }
-  .col1 {width: $grid-unit - 10}
-  .col2 {width: ($grid-unit*2) - 10}
-  .col4 {width: ($grid-unit*4) - 10}
-  .half {height: 110px;}
-
-}
-
-section#about
-{
-  img {
-    float: left;
-  }
-  p {
-    width: 750px;
-    line-height: 1.5em;
-    float: right;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-}
 
 /* sticky footer styles */
 $footer-height: 220px;
@@ -432,3 +511,4 @@ footer, #push {
   height: $footer-height;
   clear: both;
 }
+/* end sticky footer */

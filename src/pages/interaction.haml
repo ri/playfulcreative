@@ -1,3 +1,95 @@
-%section
+= stylesheets :interactionprocess
+%section#interaction
   %h1 Interaction
+  %nav
+    %a{:href => "#projects"} Skip to my projects
+  %p As an interaction designer, I connect the surface layer (what's visible) of a system with the functions it performs. This involves firstly looking at the people and context around the system and then follow through the process from wireframes, visual design to development.
+  %section#process
+    %h2 The Process...
+    
+    #process1
+      %span{:class => "number"} 1
+      %h3 Define the problem space
+      .diagram
+        %img{:id => "p1", :src => "/images/process/problem1.png"}
+        %img{:id => "p2", :src => "/images/process/problem2.png"}
+        %img{:id => "p3", :src => "/images/process/problem3.png"} 
+    
+    #process2
+      %span{:class => "number"} 2
+      %h3 Identify users' goals of the system
+      .diagram
+        %img{:id => "person-a", :class => "person", :src => "/images/process/person-red.png"}
+        .label-a User A wants to do...
+        %img{:id => "lines-a", :class => "lines", :src => "/images/process/lines-red.png"}
+        %img{:id => "this-a1", :class => "this", :src => "/images/process/this-red.png"}
+        %img{:id => "this-a2", :class => "this", :src => "/images/process/this-red.png"}
+        %img{:id => "this-a3", :class => "this", :src => "/images/process/this-red.png"}        
+        
+        %img{:id => "person-b", :class => "person", :src => "/images/process/person-teal.png"}
+        .label-b User B wants to do...
+        %img{:id => "lines-b", :class => "lines", :src => "/images/process/lines-teal.png"}
+        %img{:id => "this-b1", :class => "this", :src => "/images/process/this-teal.png"}
+        %img{:id => "this-b2", :class => "this", :src => "/images/process/this-teal.png"}
+        %img{:id => "this-b3", :class => "this", :src => "/images/process/this-teal.png"}
+    
+    #process3
+      %span{:class => "number"} 3
+      %h3 Order goals by priority and frequency of use
+      .diagram
+        %img{:id => "arrow", :src => "/images/process/arrow.png"}
+        %img{:id => "this-c1", :class => "this", :src => "/images/process/this-blue.png"}
+        %img{:id => "this-c2", :class => "this", :src => "/images/process/this-blue.png"}
+        %img{:id => "this-c3", :class => "this", :src => "/images/process/this-blue.png"}
+        %img{:id => "this-c4", :class => "this", :src => "/images/process/this-blue.png"}
+        %img{:id => "this-c5", :class => "this", :src => "/images/process/this-blue.png"}
+      
+    #process4
+      %span{:class => "number"} 4
+      %h3 Break down each goal into steps
+      .diagram
+        %img{:id => "this-d1", :class => "this", :src => "/images/process/this-blue.png"}
+        
+        %ul
+          %li Step 1
+          %li Step 2
+          %li Step 2a
+          %li Step 3
+          %li Step 4a
+          %li Step 4b
+        %img{:id => "arrow1", :class => "arrow", :src => "/images/process/arrow-straight.png"}
+        %img{:id => "arrow2", :class => "arrow", :src => "/images/process/arrow-diag-up.png"}
+        %img{:id => "arrow3", :class => "arrow", :src => "/images/process/arrow-diag-down.png"}
+        #dotted-line
+        %img{:id => "arrow4", :class => "arrow", :src => "/images/process/arrow-diag-up.png"}
+        %img{:id => "arrow5", :class => "arrow", :src => "/images/process/arrow-diag-down.png"}
+        
+        
+      
+    #process5{:class => "left small"}
+      %span{:class => "number"} 5
+      %h3 Wireframe
+      .diagram.small
+        %img{:id => "wireframe", :src => "/images/process/wireframes.png"}
+   
+    #process6{:class => "right small"}
+      %span{:class => "number"} 6
+      %h3 Test
+      .diagram.small
+        %img{:id => "test", :src => "/images/process/test.png"}
+        
+  / %section#projects
+  /   %a{:name => "projects"}
+  /   %h2 
+  /     My Projects...
+  /   
+  /   Pixemo
+  /   
+  /   Envision
+  /   
+  /   dearQUT
+  / 
+  /   VideoMixer
+  /   
+  /   Scamper
   

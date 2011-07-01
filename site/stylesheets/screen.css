@@ -4,43 +4,43 @@
 /* end colours */
 /*bubble values*/
 /*bubble values*/
-/* line 47 */
+/* global layout*/
+/* line 48 */
 body {
   background: url("/images/bgtex.jpg");
-  /*for the poopy browsers*/
   /* end header*/
   /*end nav*/
-  /*end main*/
+  /* end main */
 }
-/* line 50 */
+/* line 51 */
 body #bgstripe {
   background: url("/images/stripe.png") repeat-x;
   width: 100%;
   height: 16px;
   position: absolute;
 }
-/* line 57 */
+/* line 58 */
 body #container, body footer {
   width: 960px;
 }
-/* line 61 */
+/* line 62 */
 body header {
-  height: 120px;
+  height: 110px;
   /* end a */
 }
-/* line 63 */
+/* line 64 */
 body header a {
   font-size: 1em;
   width: 250px;
   height: 80px;
   display: block;
   color: #424254;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
-/* line 74 */
+/* line 75 */
 body header a h1 {
   height: 80px;
   margin: 0;
@@ -50,48 +50,48 @@ body header a h1 {
   font-size: 2.2em;
   font-weight: normal;
 }
-/* line 84 */
+/* line 85 */
 body header a img {
   display: inline;
   margin-top: 30px;
 }
-/* line 85 */
+/* line 86 */
 body header a:hover {
   color: #cc2a41;
 }
-/* line 89 */
+/* line 90 */
 body nav#main {
   float: right;
   /*end ul*/
 }
-/* line 91 */
+/* line 92 */
 body nav#main ul {
   /*end li*/
 }
-/* line 92 */
+/* line 93 */
 body nav#main ul li {
   display: inline;
   /*end a*/
 }
-/* line 94 */
+/* line 95 */
 body nav#main ul li a {
   float: left;
   display: block;
   position: relative;
   color: #fff;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   font-family: 'PetitaLight';
   font-size: 1.3em;
 }
-/* line 109 */
+/* line 110 */
 body nav#main ul li a span {
   display: block;
   position: absolute;
 }
-/* line 111 */
+/* line 112 */
 body nav#main ul li a.visual {
   background-color: #cc2a41;
   height: 110px;
@@ -102,16 +102,16 @@ body nav#main ul li a.visual {
   -webkit-border-radius: 0 0 110px 110px;
   border-radius: 0 0 110px 110px;
 }
-/* line 121 */
+/* line 122 */
 body nav#main ul li a.visual:hover {
   background-color: #a70e24;
 }
-/* line 125 */
+/* line 126 */
 body nav#main ul li a.visual span {
   top: 10px;
   left: 24px;
 }
-/* line 127 */
+/* line 128 */
 body nav#main ul li a.interaction {
   background-color: #424254;
   height: 80px;
@@ -122,16 +122,16 @@ body nav#main ul li a.interaction {
   -webkit-border-radius: 0 0 80px 80px;
   border-radius: 0 0 80px 80px;
 }
-/* line 137 */
+/* line 138 */
 body nav#main ul li a.interaction:hover {
   background-color: #2c2c50;
 }
-/* line 141 */
+/* line 142 */
 body nav#main ul li a.interaction span {
   top: 10px;
   left: 44px;
 }
-/* line 144 */
+/* line 145 */
 body nav#main ul li a.inspiration {
   background-color: #64908a;
   height: 130px;
@@ -142,16 +142,16 @@ body nav#main ul li a.inspiration {
   -webkit-border-radius: 0 0 130px 130px;
   border-radius: 0 0 130px 130px;
 }
-/* line 154 */
+/* line 155 */
 body nav#main ul li a.inspiration:hover {
   background-color: #2b7369;
 }
-/* line 158 */
+/* line 159 */
 body nav#main ul li a.inspiration span {
   top: 10px;
   left: 120px;
 }
-/* line 161 */
+/* line 162 */
 body nav#main ul li a.about {
   background-color: #e8caa4;
   height: 100px;
@@ -161,50 +161,65 @@ body nav#main ul li a.about {
   -webkit-border-radius: 0 0 100px 100px;
   border-radius: 0 0 100px 100px;
 }
-/* line 170 */
+/* line 171 */
 body nav#main ul li a.about:hover {
   background-color: #cc9e63;
 }
-/* line 172 */
+/* line 173 */
 body nav#main ul li a.about span {
   top: 10px;
   left: 120px;
 }
-/* line 179 */
-body #main {
-  /*end h1*/
-}
 /* line 180 */
-body #main h1#welcome {
+body div#main {
+  /* end section */
+}
+/* line 181 */
+body div#main section {
+  font-family: "PetitaMedium";
+}
+/* line 184 */
+body div#main section section {
+  padding: 20px 0;
+}
+/* line 188 */
+body div#main section h1 {
+  font-family: "PetitaLight";
+  text-align: center;
+  margin: 0px auto 20px auto;
+  padding-top: 40px;
+  width: 200px;
+  border-bottom: 1px solid #9e9e9e;
   color: #424254;
-  font-family: 'PetitaLight';
   font-weight: normal;
-  font-size: 2.5em;
-  margin: 40px 0 20px 30px;
-  width: 700px;
+  font-size: 2.6em;
 }
-/* line 189 */
-body #main h1#welcome .highlight {
-  font-size: 1.7em;
+/* line 202 */
+body div#main section h2 {
+  font-family: "PetitaBold";
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: normal;
+  color: #64908a;
+  padding-bottom: 15px;
 }
-/* line 192 */
-body #main #sliderwrapper {
-  width: 890px;
-  height: 480px;
-  margin: 0 auto;
-  padding-top: 1px;
-  margin-bottom: 80px;
-  background: url("/images/darkbgtex.png");
+/* line 211 */
+body div#main section h3 {
+  font-family: "PetitaBold";
+  font-weight: normal;
+  color: #cc2a41;
+  font-size: 1.6em;
+  line-height: 2em;
 }
-/* line 199 */
-body #main #sliderwrapper section {
-  position: relative;
-  margin: 15px;
-  width: 860px;
-  height: 430px;
-  background: url("/images/loading.gif") no-repeat 50% 50%;
+/* line 219 */
+body div#main section p {
+  font-size: 1.2em;
 }
-/* line 209 */
+/* line 224 */
+body div#main section hr {
+  clear: both;
+}
+/* line 230 */
 body footer {
   margin: 0 auto;
   position: relative;
@@ -215,62 +230,62 @@ body footer {
   color: #424254;
   /*end ul*/
 }
-/* line 220 */
+/* line 241 */
 body footer #attribution {
   position: absolute;
   right: 0px;
   bottom: 10px;
 }
-/* line 226 */
+/* line 247 */
 body footer ul {
   /*end li*/
 }
-/* line 227 */
+/* line 248 */
 body footer ul li {
   position: absolute;
   display: inline;
   bottom: 0;
   /*end a*/
 }
-/* line 231 */
+/* line 252 */
 body footer ul li a {
   float: left;
   display: block;
   position: relative;
   color: #fff;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
   font-family: 'PetitaLight';
   font-size: 1.3em;
 }
-/* line 246 */
+/* line 267 */
 body footer ul li a span {
   display: block;
   position: absolute;
 }
-/* line 248 */
+/* line 269 */
 body footer ul li a:hover {
   color: #fff;
 }
-/* line 253 */
+/* line 274 */
 body footer ul li img {
   position: absolute;
   z-index: 20;
   margin: 0;
   padding: 0;
 }
-/* line 260 */
+/* line 281 */
 body footer ul li.email {
   left: 0;
 }
-/* line 262 */
+/* line 283 */
 body footer ul li.email img {
   top: -67px;
   left: 80px;
 }
-/* line 267 */
+/* line 288 */
 body footer ul li.email a {
   background-color: #424254;
   height: 130px;
@@ -281,25 +296,25 @@ body footer ul li.email a {
   -webkit-border-radius: 130px 130px 0 0;
   border-radius: 130px 130px 0 0;
 }
-/* line 277 */
+/* line 298 */
 body footer ul li.email a:hover {
   background-color: #2c2c50;
 }
-/* line 281 */
+/* line 302 */
 body footer ul li.email a span {
   bottom: 20px;
   left: 50px;
 }
-/* line 287 */
+/* line 308 */
 body footer ul li.twitter {
   left: 240px;
 }
-/* line 289 */
+/* line 310 */
 body footer ul li.twitter img {
   top: -2px;
   left: 0px;
 }
-/* line 293 */
+/* line 314 */
 body footer ul li.twitter a {
   background-color: #64908a;
   height: 80px;
@@ -311,81 +326,79 @@ body footer ul li.twitter a {
   -webkit-border-radius: 80px 80px 0 0;
   border-radius: 80px 80px 0 0;
 }
-/* line 304 */
+/* line 325 */
 body footer ul li.twitter a:hover {
   background-color: #2b7369;
 }
-/* line 308 */
+/* line 329 */
 body footer ul li.twitter a span {
   bottom: 20px;
   left: 80px;
 }
 
 /* end body*/
-/* line 320 */
-a {
-  text-decoration: none;
-  color: #607890;
-  font-family: 'PetitaLight';
-  font-size: 1.2em;
+/* end global layout */
+/* specific page layouts */
+/* line 343 */
+#main {
+  /* home page */
+  /*end h1*/
+  /*end home page*/
+  /* visual */
+  /* end visual*/
+  /* interaction */
+  /* end interaction */
+  /* inspiration */
+  /* about */
+  /* end about */
 }
-/* line 322 */
-a img {
-  border: none;
-}
-
-/* line 330 */
-p {
-  font-family: "PetitaMedium";
-}
-
-/* line 334 */
-#loader {
-  height: 20px;
-  background: url("/images/loading.gif") no-repeat 50% 50%;
-  width: 100%;
-  display: none;
-}
-
-/* line 342 */
-.highlight1 {
-  color: #cc2a41;
-}
-
-/* line 346 */
-.highlight2 {
-  color: #64908a;
-}
-
-/* line 350 */
-section {
-  clear: both;
-}
-/* line 351 */
-section h1 {
-  font-family: "PetitaLight";
-  text-align: center;
-  margin: 0px auto 20px auto;
-  padding-top: 40px;
-  width: 200px;
-  border-bottom: 1px solid #9e9e9e;
+/* line 345 */
+#main h1#welcome {
   color: #424254;
+  font-family: 'PetitaLight';
   font-weight: normal;
-  font-size: 2.6em;
+  font-size: 2.5em;
+  margin: 40px 0 20px 30px;
+  width: 700px;
 }
-/* line 365 */
-section #filters {
+/* line 354 */
+#main h1#welcome .highlight {
+  font-size: 1.7em;
+}
+/* line 357 */
+#main #sliderwrapper {
+  width: 890px;
+  height: 480px;
+  margin: 0 auto;
+  padding-top: 1px;
+  margin-bottom: 80px;
+  background: url("/images/darkbgtex.png");
+}
+/* line 364 */
+#main #sliderwrapper section {
+  position: relative;
+  margin: 15px;
+  width: 860px;
+  height: 430px;
+  background: url("/images/loading.gif") no-repeat 50% 50%;
+}
+/* line 375 */
+#main section#portfolio {
+  padding-bottom: 40px;
+}
+/* line 378 */
+#main section#portfolio #filters {
   text-align: center;
   margin: 10px 0;
   list-style-type: none;
   clear: both;
 }
-/* line 370 */
-section #filters li {
+/* line 383 */
+#main section#portfolio #filters li {
   display: inline;
 }
-/* line 375 */
-section .work {
+/* line 388 */
+#main section#portfolio #works .work {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 0;
@@ -393,60 +406,133 @@ section .work {
   height: 230px;
   overflow: hidden;
 }
-/* line 383 */
-section .work img {
+/* line 396 */
+#main section#portfolio #works .work img {
   padding: 0;
   margin: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
-/* line 392 */
-section .work img:hover {
+/* line 405 */
+#main section#portfolio #works .work img:hover {
   width: 100%;
   /*apparently needed for opacity in ie 5-7*/
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
   opacity: 0.7;
 }
-/* line 399 */
-section .col1 {
+/* line 412 */
+#main section#portfolio #works .col1 {
   width: 110px;
 }
-/* line 400 */
-section .col2 {
+/* line 413 */
+#main section#portfolio #works .col2 {
   width: 230px;
 }
-/* line 401 */
-section .col4 {
+/* line 414 */
+#main section#portfolio #works .col4 {
   width: 470px;
 }
-/* line 402 */
-section .half {
+/* line 415 */
+#main section#portfolio #works .half {
   height: 110px;
 }
-
-/* line 408 */
-section#about img {
-  float: left;
+/* line 422 */
+#main section#interaction nav {
+  text-align: center;
+  margin-bottom: 10px;
 }
-/* line 411 */
-section#about p {
+/* line 427 */
+#main section#interaction h2 {
+  color: #cc2a41;
+}
+/* line 435 */
+#main section#inspiration p {
+  text-align: center;
+}
+/* line 442 */
+#main section#about section#short-bio img {
+  float: left;
+  padding-bottom: 20px;
+}
+/* line 446 */
+#main section#about section#short-bio p {
   width: 750px;
   line-height: 1.5em;
   float: right;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+/* line 455 */
+#main section#about section#interaction-designer img {
+  float: right;
+  padding-bottom: 20px;
+}
+/* line 460 */
+#main section#about section#interaction-designer p {
+  width: 300px;
+  float: left;
+}
+/* line 464 */
+#main section#about section#interaction-designer ul {
+  font-size: 1.2em;
+  list-style-image: url("/images/bullet.png");
+}
+/* line 467 */
+#main section#about section#interaction-designer ul li {
+  padding: 16pt 0;
+}
+/* line 472 */
+#main section#about section#background p {
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+/* end specific page layouts */
+/* line 480 */
+a {
+  text-decoration: none;
+  color: #607890;
+  font-family: 'PetitaLight';
+  font-size: 1.2em;
+}
+/* line 482 */
+a img {
+  border: none;
+}
+
+/* line 490 */
+p {
+  font-family: "PetitaMedium";
+}
+
+/* line 494 */
+#loader {
+  height: 20px;
+  background: url("/images/loading.gif") no-repeat 50% 50%;
+  width: 100%;
+  display: none;
+}
+
+/* line 502 */
+.highlight1 {
+  color: #cc2a41;
+}
+
+/* line 506 */
+.highlight2 {
+  color: #64908a;
+}
 
 /* sticky footer styles */
-/* line 423 */
+/* line 514 */
 html, body {
   height: 100%;
 }
 
-/* line 424 */
+/* line 515 */
 #container {
   min-height: 100%;
   height: auto !important;
@@ -454,8 +540,10 @@ html, body {
   margin: 0 auto -220px;
 }
 
-/* line 431 */
+/* line 522 */
 footer, #push {
   height: 220px;
   clear: both;
 }
+
+/* end sticky footer */

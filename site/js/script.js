@@ -7,7 +7,7 @@ $('#works').imagesLoaded( function() {
 });
 
 $(document).ready(function() { 
-     
+    var $container = $('#works');
     $('#slider').nivoSlider({
               effect: 'fade',
               directionNavHide: false,
@@ -22,7 +22,6 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-  var $container = $('#works');
   
   // $container
 

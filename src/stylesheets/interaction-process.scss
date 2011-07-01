@@ -1,0 +1,230 @@
+@import "global.scss";
+
+section#interaction {
+  div {
+    margin-bottom: 20px;
+    
+    &.small {width: 480px}
+    &.left {float: left;}
+    &.right {float: right;}
+  }
+  #process {
+    .number {
+      font-family: 'SwingDancer';
+      font-size: 32pt;
+      color: $teal;
+    }
+  
+    h3 {
+      font-family: 'LeagueGothic';
+      color: $teal;
+      font-size: 20pt;
+      display: inline;
+    }
+  
+    .diagram {
+      width: 960px;
+      position: relative;
+      
+      &.small {width: 450px;}
+      img, div, li {position: absolute;}
+    }
+  
+    #process1 {
+      .diagram {
+        height: 300px;
+        img {
+          top: 10px;
+          height: 280px;
+          width: 280px;
+          -webkit-transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
+          -moz-transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
+          -o-transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
+          transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
+      
+          &:hover {
+            height: 300px;
+            width: 300px;
+            top: 0;
+          }
+      
+          &#p1 {
+            left: 80px;
+            z-index: 0;
+            &:hover {z-index: 2;};
+          }
+      
+          &#p2 {
+            left: 340px;
+            &:hover {left: 330px;}
+            z-index: 1
+            }
+      
+          &#p3 {
+            left: 600px;
+            z-index: 0;
+            &:hover {left: 580px; z-index: 2;}
+            } 
+        }
+      }
+    }
+    #process2 {
+      .diagram {
+        font-family: PetitaMedium;
+        font-size: 16pt;
+        height: 380px;
+        
+        .label-a {color: $red; top: 130px; left: 150px;}
+        .label-b {color: $teal; top: 130px; left: 630px;}
+        
+        .person {
+          top: 20px;
+          &#person-a {left: 190px;}
+          &#person-b {left: 670px;}
+        }
+        
+        .lines {
+          top: 160px;
+          
+          &#lines-a {left: 140px;}
+          &#lines-b {left: 620px;}
+        }
+        
+        .this {
+          $this-a1: 80px;
+          $this-a2: 110px;
+          $this-a3: 90px;
+          
+          $this-b1: 110px;
+          $this-b2: 90px;
+          $this-b3: 100px;
+          
+          -webkit-transition: width 0.2s ease, left 0.2s ease;
+          -moz-transition: width 0.2s ease, left 0.2s ease;
+          -o-transition: width 0.2s ease, left 0.2s ease;
+          transition: width 0.2s ease, left 0.2s ease;
+          &#this-a1 {top: 200px; left:65px; width: $this-a1;
+            &:hover{width: $this-a1 + 10px; left: 60px;}}
+          &#this-a2 {top: 255px; left:190px; width: $this-a2;
+            &:hover{width: $this-a2 + 20px; left: 180px;}}
+          &#this-a3 {top: 190px; left:320px; width: $this-a3;
+            &:hover{width: $this-a3 + 10px; left: 315px;}}
+            
+          &#this-b1 {top: 285px; left:550px; width: $this-b1;
+            &:hover{width: $this-b1 + 20px; left: 540px;}}
+          &#this-b2 {top: 215px; left:680px; width: $this-b2;
+            &:hover{width: $this-b2 + 20px; left: 670px;}}
+          &#this-b3 {top: 250px; left:800px; width: $this-b3;
+            &:hover{width: $this-b3 + 20px; left: 790px;}}
+        }
+      }
+    }
+    #process3 {
+      .diagram {height: 170px;}
+      
+      $this-c1: 110px;
+      $this-c2: 70px;
+      $this-c3: 100px;
+      $this-c4: 130px;
+      $this-c5: 80px;
+      
+      #arrow {left: 340px;}
+      
+      .this {
+        -webkit-transition: width 0.2s ease, left 0.2s ease;
+        -moz-transition: width 0.2s ease, left 0.2s ease;
+        -o-transition: width 0.2s ease, left 0.2s ease;
+        transition: width 0.2s ease, left 0.2s ease;
+        
+        &#this-c1 {top: 50px; left:60px; width: $this-c1;
+          &:hover{width: $this-c1 + 20px; left: 50px;}}
+        &#this-c2 {top: 70px; left:250px; width: $this-c2;
+          &:hover{width: $this-c2 + 10px; left: 245px;}}
+        &#this-c3 {top: 55px; left:400px; width: $this-c3;
+          &:hover{width: $this-c3 + 20px; left: 390px;}}
+        &#this-c4 {top: 40px; left:590px; width: $this-c4;
+          &:hover{width: $this-c4 + 20px; left: 580px;}}
+        &#this-c5 {top: 65px; left:800px; width: $this-c5;
+          &:hover{width: $this-c5 + 10px; left: 795px;}}
+
+      }
+      
+    }
+    
+    #process4 {
+      .diagram {height:180px;}
+      
+      #this-d1 {
+        left: 60px;
+        height: 120px;
+        top: 40px;
+      }
+      
+      ul {
+        left: 150px;
+        list-style-type: none;
+        font-family: 'LeagueGothic';
+        font-size: 26pt;
+        color: $red;
+        li {
+          margin: 0;
+          padding: 12px 0 0 8px;
+          width: 77px;
+          height: 59px;
+          background: url('/images/process/circle.png');
+          top: 60px;
+          &:nth-child(1) {
+            left: 260px;
+          }
+          
+          &:nth-child(2) {
+            left: 395px;
+          }
+          
+          &:nth-child(3) {
+            left: 530px;
+            top: 10px;
+          }
+          
+          &:nth-child(4) {
+            left: 665px;
+          }
+          
+          &:nth-child(5) {
+            left: 800px;
+            top: 10px;
+          }
+          
+          &:nth-child(6) {
+            left: 800px;
+            top: 106px;
+          }
+        }
+      }
+      .arrow {
+        top: 78px;
+        &#arrow1 {left:350px;}
+        &#arrow2 {left:485px; top:48px;}
+        &#arrow3 {left:620px; top:48px;}
+        &#arrow4 {left:755px; top:48px;}
+        &#arrow5 {left:755px; top:106px;}        
+      }
+      #dotted-line {
+        width: 170px;
+        height: 4px;
+        border-bottom: 4px dashed $red;
+        top: 90px;
+        left: 485px;  
+      }
+    }
+    
+    #process5 {
+      .diagram {height: 250px;
+        img{left: 60px;}}
+    }
+    #process6 {
+      .diagram {height: 300px;
+        img{left: 100px;}}
+    }
+  }
+}
