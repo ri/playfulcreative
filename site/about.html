@@ -1,12 +1,161 @@
-<h1>SyntaxError</h1>
-<p>
-  compile error
-  (haml):26: unknown type of %string
-  ...e_false_false_true_false(( %link{ :rel => "stylesheet", :hre...
-                                ^
-  (haml):26: syntax error, unexpected $end
-  ...e_false_false_true_false(( %link{ :rel => "stylesheet", :hre...
-                                ^
-</p>
-<h2>Stack Trace</h2>
-(haml):26:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/haml/engine.rb:178:in `instance_eval'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/render.rb:112:in `generate_html_from_template_source'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/render.rb:41:in `generate_html_with_layout'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/build.rb:13:in `build_html'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/build.rb:10:in `each'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/build.rb:10:in `build_html'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/mixins/build.rb:5:in `build'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/base.rb:71:in `send'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/../lib/staticmatic/base.rb:71:in `run'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.1/bin/staticmatic:16<br/>/usr/bin/staticmatic:19:in `load'<br/>/usr/bin/staticmatic:19
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset='utf-8' />
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+  <title>
+    Playful Creative
+  </title>
+  <meta content='' name='description' />
+  <meta content='' name='author' />
+  <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+  <link href='/favicon.ico' rel='shortcut icon' />
+  <link href='/apple-touch-icon.png' rel='apple-touch-icon' />
+  <link href='/stylesheets/boilerplate.css' rel='stylesheet' />
+  <link href='/stylesheets/screen.css' rel='stylesheet' />
+  <link href='/stylesheets/fonts.css' rel='stylesheet' />
+  <link href='/stylesheets/nivo-slider.css' rel='stylesheet' />
+  <link href='/stylesheets/isotope.css' rel='stylesheet' />
+  <link href='/stylesheets/slider-custom.css' rel='stylesheet' />
+  <link href='/fancybox/jquery.fancybox-1.3.4.css' rel='stylesheet' />
+</head>
+<body>
+  <div id='bgstripe'></div>
+  <div id='container'>
+    <nav id='main'>
+      <ul>
+        <li>
+          <a class='visual' href='visual.html'>
+            <span>Purely Visual</span>
+          </a>
+        </li>
+        <li>
+          <a class='interaction' href='interaction.html'>
+            <span>Interaction</span>
+          </a>
+        </li>
+        <li>
+          <a class='inspiration' href='inspiration.html'>
+            <span>Inspiration</span>
+          </a>
+        </li>
+        <li>
+          <a class='about' href='about.html'>
+            <span>About</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <a href='/'>
+        <img alt="Logo" src="/images/logo.png"/>
+        <h1>Playful Creative</h1>
+      </a>
+    </header>
+    <div id='main' role='main'>
+      <section id='about'>
+        <h1>About</h1>
+        <section id='short-bio'>
+          <h2>The Short Bio...</h2>
+          <img alt='Photo of Ri Liu' src='/images/ri.jpg' title="Yep, that's my mug" />
+          <p>
+            Originally from Brisbane, Australia, I now live the right-side-up in Chicago.
+          </p>
+          <p>
+            I've dabbled in various web dev technologies, but at the moment I'm keen to do some design (visual and front-end)/user experience work with a tech focus. I'm armed with a IT and a Communication Design degree with experience in web design, UX and digital publishing.
+          </p>
+          <p>
+            I am currently seeking both freelance/permanent work. Hit me up at
+            <a href='mailto:ri@playfulcreative.com'>ri@playfulcreative.com</a>
+          </p>
+        </section>
+        <hr />
+        <section id='interaction-designer'>
+          <h2>What I do as an Interaction Designer...</h2>
+          <img alt='Examples of Interaction Design work' src='/images/interaction-design.png' />
+          <p>
+            <ul>
+              <li>Design usable interfaces</li>
+              <li>Combine form and function in the best way possible</li>
+              <li>Pushing boundaries by experimenting with ways in which we can interact with technology</li>
+            </ul>
+          </p>
+        </section>
+        <hr />
+        <section id='background'>
+          <h2>My Background...</h2>
+          <h3>Graphic Design</h3>
+          <p>
+            I have worked in almost the entire spectrum of the visual design field from designing book covers, to logos, websites and 3D models. You can see my visual-based works
+            <a href='visual.html'>here.</a>
+          </p>
+          <h3>Front End Development</h3>
+          <p>After considering how an interface will look, I can then turn these designs into a reality. I am a tamer of browsers and am familiar with Haml, Scss and the like (with a bit of javascript).</p>
+          <h3>Programming</h3>
+          <p>I have worked on backend for web applications with various web frameworks and languages - the current flavour of choice being Ruby on Rails. I also like to play around with programming experimental visualisations and interfaces.</p>
+        </section>
+        <hr />
+        <section id='what-this-means'>
+          <h2>What This Means...</h2>
+          <p>I can combine my knowledge of visual design principles and understanding of technical possilibities to design aestheric, implementable and usable interfaces.</p>
+        </section>
+      </section>
+    </div>
+    <div id='push'></div>
+  </div>
+  <footer>
+    <div id='contact'>
+      <ul>
+        <li class='email'>
+          <img src='/images/envelope.png' />
+          <a href='mailto:ri@playfulcreative.com'>
+            <span>ri@playfulcreative.com</span>
+          </a>
+        </li>
+        <li class='twitter'>
+          <img src='/images/twitterbird.png' />
+          <a href='http://www.twitter.com/riblah'>
+            <span>@riblah</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id='attribution'>
+      Designed and Coded up in
+      <span class='highlight1'>
+        HTML5
+      </span>
+      and
+      <span class='highlight2'>
+        CSS3
+      </span>
+      by
+      Ri Liu
+    </div>
+    <!-- window.jQuery(function() { $('#works').css('visibility', 'hidden'); }); -->
+  </footer>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script type='text/javascript'>
+    //<![CDATA[
+      window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>");
+    //]]>
+  </script>
+  <script src='js/plugins.js'></script>
+  <script src='js/libs/modernizr-1.7.min.js'></script>
+  <script src='js/libs/jquery.nivo.slider.pack.js'></script>
+  <script src='js/libs/jquery.isotope.js'></script>
+  <script src='js/libs/jquery.isotope.min.js'></script>
+  <script src='fancybox/jquery.mousewheel-3.0.4.pack.js'></script>
+  <script src='fancybox/jquery.fancybox-1.3.4.pack.js'></script>
+  <script src='js/script.js'></script>
+  <!--[if lt IE 7 ]>
+    <script src='js/libs/dd_belatedpng.js'></script>
+    <script>
+      >DD_belatedPNG.fix("img, .png_bg")
+    </script>
+  <![endif]-->
+</body>
+</html>
