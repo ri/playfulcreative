@@ -154,18 +154,12 @@ section#interaction {
     #process4 {
       .diagram {height:180px;}
       
-      #this-d1 {
-        left: 60px;
-        height: 120px;
-        top: 40px;
-      }
-      
       ul {
-        left: 150px;
+        left: 50px;
         list-style-type: none;
         font-family: 'LeagueGothic';
         font-size: 26pt;
-        color: $red;
+        color: #dd818d;
         li {
           margin: 0;
           padding: 12px 0 0 8px;
@@ -174,47 +168,47 @@ section#interaction {
           background: url('/images/process/circle.png');
           top: 60px;
           &:nth-child(1) {
-            left: 260px;
+            left: 80px;
           }
           
           &:nth-child(2) {
-            left: 395px;
+            left: 235px;
           }
           
           &:nth-child(3) {
-            left: 530px;
+            left: 390px;
             top: 10px;
           }
           
           &:nth-child(4) {
-            left: 665px;
+            left: 540px;
           }
           
           &:nth-child(5) {
-            left: 800px;
+            left: 690px;
             top: 10px;
           }
           
           &:nth-child(6) {
-            left: 800px;
+            left:690px;
             top: 106px;
           }
         }
       }
       .arrow {
         top: 78px;
-        &#arrow1 {left:350px;}
-        &#arrow2 {left:485px; top:48px;}
-        &#arrow3 {left:620px; top:48px;}
-        &#arrow4 {left:755px; top:48px;}
-        &#arrow5 {left:755px; top:106px;}        
+        &#arrow1 {left:180px;}
+        &#arrow2 {left:335px; top:48px;}
+        &#arrow3 {left:490px; top:48px;}
+        &#arrow4 {left:635px; top:48px;}
+        &#arrow5 {left:635px; top:106px;}        
       }
       #dotted-line {
-        width: 170px;
+        width: 190px;
         height: 4px;
-        border-bottom: 4px dashed $red;
+        border-bottom: 4px dashed #dd818d;
         top: 90px;
-        left: 485px;  
+        left: 335px;  
       }
     }
     
