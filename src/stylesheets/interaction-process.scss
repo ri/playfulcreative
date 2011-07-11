@@ -159,7 +159,7 @@ section#interaction {
         list-style-type: none;
         font-family: 'LeagueGothic';
         font-size: 26pt;
-        color: #dd818d;
+        color: $red;
         li {
           margin: 0;
           padding: 12px 0 0 8px;
@@ -206,7 +206,7 @@ section#interaction {
       #dotted-line {
         width: 190px;
         height: 4px;
-        border-bottom: 4px dashed #dd818d;
+        border-bottom: 4px dashed $red;
         top: 90px;
         left: 335px;  
       }
