@@ -510,7 +510,7 @@ p {
 
 /* line 482 */
 #loader {
-  height: 20px;
+  height: 80px;
   background: url("/images/loading.gif") no-repeat 50% 50%;
   width: 100%;
   display: none;
