@@ -4,21 +4,25 @@
 $visual-whole: 220px;
 $visual-half: $visual-whole/2;
 $visual-border-values: 0 0 $visual-half $visual-half;
+$visual-border-values-big: 0 0 ($visual-half*1.1) ($visual-half*1.1);
 $visual-margin: 0px;
 
 $interaction-whole: 160px;
 $interaction-half: $interaction-whole/2;
 $interaction-border-values: 0 0 $interaction-half $interaction-half;
+$interaction-border-values-big: 0 0 ($interaction-half*1.15) ($interaction-half*1.15);
 $interaction-margin: -80px;
 
 $inspiration-whole: 260px;
 $inspiration-half: $inspiration-whole/2;
 $inspiration-border-values: 0 0 $inspiration-half $inspiration-half;
+$inspiration-border-values-big: 0 0 ($inspiration-half*1.1) ($inspiration-half*1.1);
 $inspiration-margin: -80px;
 
 $about-whole: 200px;
 $about-half: $about-whole/2;
 $about-border-values: 0 0 $about-half $about-half;
+$about-border-values-big: 0 0 ($about-half*1.1) ($about-half*1.1);
 $about-margin: -90px;
 
 $email-whole: 240px;
@@ -85,10 +89,10 @@ body {
           display: block;
           position: relative;
           color: #fff;
-          -webkit-transition: background-color 0.2s ease;
-          -moz-transition: background-color 0.2s ease;
-          -o-transition: background-color 0.2s ease;
-          transition: background-color 0.2s ease;
+          -moz-transition: -moz-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+          -o-transition: -o-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+          -webkit-transition: -webkit-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+          transition: border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
           
           font: {
             family: 'PetitaLight';
@@ -108,7 +112,12 @@ body {
             border-radius: $visual-border-values;
 
              &:hover  {
-              background-color: #a70e24;
+              -o-border-radius: $visual-border-values-big;
+              -moz-border-radius: $visual-border-values-big;
+              -webkit-border-radius: $visual-border-values-big;
+              border-radius: $visual-border-values-big;
+              height: $visual-half * 1.1;
+              width: $visual-whole * 1.1;
              }
              
              span {top: 10px; left: 24px;}
@@ -122,12 +131,18 @@ body {
             -moz-border-radius: $interaction-border-values;
             -webkit-border-radius: $interaction-border-values;
             border-radius: $interaction-border-values;
+            
 
             &:hover  {
-              background-color: $dark-blue-hover;
+              -o-border-radius: $interaction-border-values-big;
+              -moz-border-radius: $interaction-border-values-big;
+              -webkit-border-radius: $interaction-border-values-big;
+              border-radius: $interaction-border-values-big;
+              height: $interaction-half * 1.15;
+              width: $interaction-whole * 1.15;
             }
             
-            span {top: 10px; left: 44px;}
+            span {top: 10px; left: 30%;}
              
            }
            &.inspiration {
@@ -141,7 +156,12 @@ body {
              border-radius: $inspiration-border-values;
               
                &:hover  {
-                 background-color: $teal-hover;
+                 -o-border-radius: $inspiration-border-values-big;
+                 -moz-border-radius: $inspiration-border-values-big;
+                 -webkit-border-radius: $inspiration-border-values-big;
+                 border-radius: $inspiration-border-values-big;
+                 height: $inspiration-half * 1.1;
+                 width: $inspiration-whole * 1.1;
                }
                
                span {top: 10px; left: 120px;}
@@ -156,7 +176,14 @@ body {
               -webkit-border-radius: $about-border-values;
               border-radius: $about-border-values;
 
-               &:hover{ background-color: #cc9e63;}
+               &:hover{ 
+                 -o-border-radius: $about-border-values-big;
+                 -moz-border-radius: $about-border-values-big;
+                 -webkit-border-radius: $about-border-values-big;
+                 border-radius: $about-border-values-big;
+                 height: $about-half * 1.1;
+                 width: $about-whole * 1.1;
+                 }
                
                span {top: 10px; left: 120px;}
             }

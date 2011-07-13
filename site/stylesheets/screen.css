@@ -5,30 +5,30 @@
 /*bubble values*/
 /*bubble values*/
 /* global layout*/
-/* line 36 */
+/* line 40 */
 body {
   background: url("/images/bgtex.jpg");
   /* end header*/
   /*end nav*/
   /* end main */
 }
-/* line 39 */
+/* line 43 */
 body #bgstripe {
   background: url("/images/stripe.png") repeat-x;
   width: 100%;
   height: 16px;
   position: absolute;
 }
-/* line 46 */
+/* line 50 */
 body #container, body footer {
   width: 960px;
 }
-/* line 50 */
+/* line 54 */
 body header {
   height: 110px;
   /* end a */
 }
-/* line 52 */
+/* line 56 */
 body header a {
   font-size: 1em;
   width: 250px;
@@ -40,7 +40,7 @@ body header a {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 63 */
+/* line 67 */
 body header a h1 {
   height: 80px;
   margin: 0;
@@ -50,48 +50,48 @@ body header a h1 {
   font-size: 2.2em;
   font-weight: normal;
 }
-/* line 73 */
+/* line 77 */
 body header a img {
   display: inline;
   margin-top: 30px;
 }
-/* line 74 */
+/* line 78 */
 body header a:hover {
   color: #cc2a41;
 }
-/* line 78 */
+/* line 82 */
 body nav#main {
   float: right;
   /*end ul*/
 }
-/* line 80 */
+/* line 84 */
 body nav#main ul {
   /*end li*/
 }
-/* line 81 */
+/* line 85 */
 body nav#main ul li {
   display: inline;
   /*end a*/
 }
-/* line 83 */
+/* line 87 */
 body nav#main ul li a {
   float: left;
   display: block;
   position: relative;
   color: #fff;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
+  -moz-transition: -moz-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+  -o-transition: -o-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+  -webkit-transition: -webkit-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+  transition: border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
   font-family: 'PetitaLight';
   font-size: 1.3em;
 }
-/* line 98 */
+/* line 102 */
 body nav#main ul li a span {
   display: block;
   position: absolute;
 }
-/* line 100 */
+/* line 104 */
 body nav#main ul li a.visual {
   background-color: #cc2a41;
   height: 110px;
@@ -102,16 +102,21 @@ body nav#main ul li a.visual {
   -webkit-border-radius: 0 0 110px 110px;
   border-radius: 0 0 110px 110px;
 }
-/* line 110 */
-body nav#main ul li a.visual:hover {
-  background-color: #a70e24;
-}
 /* line 114 */
+body nav#main ul li a.visual:hover {
+  -o-border-radius: 0 0 121.0px 121.0px;
+  -moz-border-radius: 0 0 121.0px 121.0px;
+  -webkit-border-radius: 0 0 121.0px 121.0px;
+  border-radius: 0 0 121.0px 121.0px;
+  height: 121.0px;
+  width: 242.0px;
+}
+/* line 123 */
 body nav#main ul li a.visual span {
   top: 10px;
   left: 24px;
 }
-/* line 116 */
+/* line 125 */
 body nav#main ul li a.interaction {
   background-color: #424254;
   height: 80px;
@@ -122,16 +127,21 @@ body nav#main ul li a.interaction {
   -webkit-border-radius: 0 0 80px 80px;
   border-radius: 0 0 80px 80px;
 }
-/* line 126 */
+/* line 136 */
 body nav#main ul li a.interaction:hover {
-  background-color: #2c2c50;
+  -o-border-radius: 0 0 92px 92px;
+  -moz-border-radius: 0 0 92px 92px;
+  -webkit-border-radius: 0 0 92px 92px;
+  border-radius: 0 0 92px 92px;
+  height: 92px;
+  width: 184px;
 }
-/* line 130 */
+/* line 145 */
 body nav#main ul li a.interaction span {
   top: 10px;
-  left: 44px;
+  left: 30%;
 }
-/* line 133 */
+/* line 148 */
 body nav#main ul li a.inspiration {
   background-color: #64908a;
   height: 130px;
@@ -142,16 +152,21 @@ body nav#main ul li a.inspiration {
   -webkit-border-radius: 0 0 130px 130px;
   border-radius: 0 0 130px 130px;
 }
-/* line 143 */
+/* line 158 */
 body nav#main ul li a.inspiration:hover {
-  background-color: #2b7369;
+  -o-border-radius: 0 0 143px 143px;
+  -moz-border-radius: 0 0 143px 143px;
+  -webkit-border-radius: 0 0 143px 143px;
+  border-radius: 0 0 143px 143px;
+  height: 143px;
+  width: 286px;
 }
-/* line 147 */
+/* line 167 */
 body nav#main ul li a.inspiration span {
   top: 10px;
   left: 120px;
 }
-/* line 150 */
+/* line 170 */
 body nav#main ul li a.about {
   background-color: #e8caa4;
   height: 100px;
@@ -161,28 +176,33 @@ body nav#main ul li a.about {
   -webkit-border-radius: 0 0 100px 100px;
   border-radius: 0 0 100px 100px;
 }
-/* line 159 */
+/* line 179 */
 body nav#main ul li a.about:hover {
-  background-color: #cc9e63;
+  -o-border-radius: 0 0 110.0px 110.0px;
+  -moz-border-radius: 0 0 110.0px 110.0px;
+  -webkit-border-radius: 0 0 110.0px 110.0px;
+  border-radius: 0 0 110.0px 110.0px;
+  height: 110.0px;
+  width: 220.0px;
 }
-/* line 161 */
+/* line 188 */
 body nav#main ul li a.about span {
   top: 10px;
   left: 120px;
 }
-/* line 168 */
+/* line 195 */
 body div#main {
   /* end section */
 }
-/* line 169 */
+/* line 196 */
 body div#main section {
   font-family: "PetitaMedium";
 }
-/* line 172 */
+/* line 199 */
 body div#main section section {
   padding: 20px 0;
 }
-/* line 176 */
+/* line 203 */
 body div#main section h1 {
   font-family: "PetitaLight";
   text-align: center;
@@ -194,7 +214,7 @@ body div#main section h1 {
   font-weight: normal;
   font-size: 2.6em;
 }
-/* line 190 */
+/* line 217 */
 body div#main section h2 {
   font-family: "PetitaBold";
   text-transform: uppercase;
@@ -203,7 +223,7 @@ body div#main section h2 {
   color: #64908a;
   padding-bottom: 15px;
 }
-/* line 199 */
+/* line 226 */
 body div#main section h3 {
   font-family: "PetitaBold";
   font-weight: normal;
@@ -211,15 +231,15 @@ body div#main section h3 {
   font-size: 1.6em;
   line-height: 2em;
 }
-/* line 207 */
+/* line 234 */
 body div#main section p {
   font-size: 1.2em;
 }
-/* line 212 */
+/* line 239 */
 body div#main section hr {
   clear: both;
 }
-/* line 218 */
+/* line 245 */
 body footer {
   margin: 0 auto;
   position: relative;
@@ -230,24 +250,24 @@ body footer {
   color: #424254;
   /*end ul*/
 }
-/* line 229 */
+/* line 256 */
 body footer #attribution {
   position: absolute;
   right: 0px;
   bottom: 10px;
 }
-/* line 235 */
+/* line 262 */
 body footer ul {
   /*end li*/
 }
-/* line 236 */
+/* line 263 */
 body footer ul li {
   position: absolute;
   display: inline;
   bottom: 0;
   /*end a*/
 }
-/* line 240 */
+/* line 267 */
 body footer ul li a {
   float: left;
   display: block;
@@ -260,32 +280,32 @@ body footer ul li a {
   font-family: 'PetitaLight';
   font-size: 1.3em;
 }
-/* line 255 */
+/* line 282 */
 body footer ul li a span {
   display: block;
   position: absolute;
 }
-/* line 257 */
+/* line 284 */
 body footer ul li a:hover {
   color: #fff;
 }
-/* line 262 */
+/* line 289 */
 body footer ul li img {
   position: absolute;
   z-index: 20;
   margin: 0;
   padding: 0;
 }
-/* line 269 */
+/* line 296 */
 body footer ul li.email {
   left: 0;
 }
-/* line 271 */
+/* line 298 */
 body footer ul li.email img {
   top: -67px;
   left: 80px;
 }
-/* line 276 */
+/* line 303 */
 body footer ul li.email a {
   background-color: #424254;
   height: 130px;
@@ -296,25 +316,25 @@ body footer ul li.email a {
   -webkit-border-radius: 130px 130px 0 0;
   border-radius: 130px 130px 0 0;
 }
-/* line 286 */
+/* line 313 */
 body footer ul li.email a:hover {
   background-color: #2c2c50;
 }
-/* line 290 */
+/* line 317 */
 body footer ul li.email a span {
   bottom: 20px;
   left: 50px;
 }
-/* line 296 */
+/* line 323 */
 body footer ul li.twitter {
   left: 240px;
 }
-/* line 298 */
+/* line 325 */
 body footer ul li.twitter img {
   top: -2px;
   left: 0px;
 }
-/* line 302 */
+/* line 329 */
 body footer ul li.twitter a {
   background-color: #64908a;
   height: 80px;
@@ -326,11 +346,11 @@ body footer ul li.twitter a {
   -webkit-border-radius: 80px 80px 0 0;
   border-radius: 80px 80px 0 0;
 }
-/* line 313 */
+/* line 340 */
 body footer ul li.twitter a:hover {
   background-color: #2b7369;
 }
-/* line 317 */
+/* line 344 */
 body footer ul li.twitter a span {
   bottom: 20px;
   left: 80px;
@@ -339,7 +359,7 @@ body footer ul li.twitter a span {
 /* end body*/
 /* end global layout */
 /* specific page layouts */
-/* line 331 */
+/* line 358 */
 #main {
   /* home page */
   /*end h1*/
@@ -352,7 +372,7 @@ body footer ul li.twitter a span {
   /* about */
   /* end about */
 }
-/* line 333 */
+/* line 360 */
 #main h1#welcome {
   color: #424254;
   font-family: 'PetitaLight';
@@ -361,11 +381,11 @@ body footer ul li.twitter a span {
   margin: 40px 0 20px 30px;
   width: 700px;
 }
-/* line 342 */
+/* line 369 */
 #main h1#welcome .highlight {
   font-size: 1.7em;
 }
-/* line 345 */
+/* line 372 */
 #main #sliderwrapper {
   width: 890px;
   height: 480px;
@@ -374,7 +394,7 @@ body footer ul li.twitter a span {
   margin-bottom: 80px;
   background: url("/images/darkbgtex.png");
 }
-/* line 352 */
+/* line 379 */
 #main #sliderwrapper section {
   position: relative;
   margin: 15px;
@@ -382,22 +402,22 @@ body footer ul li.twitter a span {
   height: 430px;
   background: url("/images/loading.gif") no-repeat 50% 50%;
 }
-/* line 363 */
+/* line 390 */
 #main section#portfolio {
   padding-bottom: 40px;
 }
-/* line 366 */
+/* line 393 */
 #main section#portfolio #filters {
   text-align: center;
   margin: 10px 0;
   list-style-type: none;
   clear: both;
 }
-/* line 371 */
+/* line 398 */
 #main section#portfolio #filters li {
   display: inline;
 }
-/* line 376 */
+/* line 403 */
 #main section#portfolio #works .work {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -406,7 +426,7 @@ body footer ul li.twitter a span {
   height: 230px;
   overflow: hidden;
 }
-/* line 384 */
+/* line 411 */
 #main section#portfolio #works .work img {
   padding: 0;
   margin: 0;
@@ -415,7 +435,7 @@ body footer ul li.twitter a span {
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
-/* line 393 */
+/* line 420 */
 #main section#portfolio #works .work img:hover {
   width: 100%;
   /*apparently needed for opacity in ie 5-7*/
@@ -423,41 +443,41 @@ body footer ul li.twitter a span {
   -moz-opacity: 0.7;
   opacity: 0.7;
 }
-/* line 400 */
+/* line 427 */
 #main section#portfolio #works .col1 {
   width: 110px;
 }
-/* line 401 */
+/* line 428 */
 #main section#portfolio #works .col2 {
   width: 230px;
 }
-/* line 402 */
+/* line 429 */
 #main section#portfolio #works .col4 {
   width: 470px;
 }
-/* line 403 */
+/* line 430 */
 #main section#portfolio #works .half {
   height: 110px;
 }
-/* line 410 */
+/* line 437 */
 #main section#interaction nav {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 415 */
+/* line 442 */
 #main section#interaction h2 {
   color: #cc2a41;
 }
-/* line 423 */
+/* line 450 */
 #main section#inspiration p {
   text-align: center;
 }
-/* line 430 */
+/* line 457 */
 #main section#about section#short-bio img {
   float: left;
   padding-bottom: 20px;
 }
-/* line 434 */
+/* line 461 */
 #main section#about section#short-bio p {
   width: 750px;
   line-height: 1.5em;
@@ -465,50 +485,50 @@ body footer ul li.twitter a span {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-/* line 443 */
+/* line 470 */
 #main section#about section#interaction-designer img {
   float: right;
   padding-bottom: 20px;
 }
-/* line 448 */
+/* line 475 */
 #main section#about section#interaction-designer p {
   width: 300px;
   float: left;
 }
-/* line 452 */
+/* line 479 */
 #main section#about section#interaction-designer ul {
   font-size: 1.2em;
   list-style-image: url("/images/bullet.png");
 }
-/* line 455 */
+/* line 482 */
 #main section#about section#interaction-designer ul li {
   padding: 16pt 0;
 }
-/* line 460 */
+/* line 487 */
 #main section#about section#background p {
   padding-bottom: 10px;
   margin-left: 20px;
 }
 
 /* end specific page layouts */
-/* line 468 */
+/* line 495 */
 a {
   text-decoration: none;
   color: #607890;
   font-family: 'PetitaLight';
   font-size: 1.2em;
 }
-/* line 470 */
+/* line 497 */
 a img {
   border: none;
 }
 
-/* line 478 */
+/* line 505 */
 p {
   font-family: "PetitaMedium";
 }
 
-/* line 482 */
+/* line 509 */
 #loader {
   height: 80px;
   background: url("/images/loading.gif") no-repeat 50% 50%;
@@ -516,23 +536,23 @@ p {
   display: none;
 }
 
-/* line 490 */
+/* line 517 */
 .highlight1 {
   color: #cc2a41;
 }
 
-/* line 494 */
+/* line 521 */
 .highlight2 {
   color: #64908a;
 }
 
 /* sticky footer styles */
-/* line 502 */
+/* line 529 */
 html, body {
   height: 100%;
 }
 
-/* line 503 */
+/* line 530 */
 #container {
   min-height: 100%;
   height: auto !important;
@@ -540,7 +560,7 @@ html, body {
   margin: 0 auto -220px;
 }
 
-/* line 510 */
+/* line 537 */
 footer, #push {
   height: 220px;
   clear: both;
