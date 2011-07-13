@@ -89,10 +89,10 @@ body {
           display: block;
           position: relative;
           color: #fff;
-          -moz-transition: -moz-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-          -o-transition: -o-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-          -webkit-transition: -webkit-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-          transition: border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+          -moz-transition: -moz-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+          -o-transition: -o-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+          -webkit-transition: -webkit-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+          transition: border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
           
           font: {
             family: 'PetitaLight';
@@ -161,7 +161,7 @@ body {
                  -webkit-border-radius: $inspiration-border-values-big;
                  border-radius: $inspiration-border-values-big;
                  height: $inspiration-half * 1.1;
-                 width: $inspiration-whole * 1.1;
+                 width: $inspiration-whole * 1.05;
                }
                
                span {top: 10px; left: 120px;}

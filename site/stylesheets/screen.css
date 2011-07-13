@@ -79,10 +79,10 @@ body nav#main ul li a {
   display: block;
   position: relative;
   color: #fff;
-  -moz-transition: -moz-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-  -o-transition: -o-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-  -webkit-transition: -webkit-border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
-  transition: border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
+  -moz-transition: -moz-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+  -o-transition: -o-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+  -webkit-transition: -webkit-border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
+  transition: border-radius 0.3s ease, width 0.3s ease, height 0.3s ease;
   font-family: 'PetitaLight';
   font-size: 1.3em;
 }
@@ -159,7 +159,7 @@ body nav#main ul li a.inspiration:hover {
   -webkit-border-radius: 0 0 143px 143px;
   border-radius: 0 0 143px 143px;
   height: 143px;
-  width: 286px;
+  width: 273px;
 }
 /* line 167 */
 body nav#main ul li a.inspiration span {
