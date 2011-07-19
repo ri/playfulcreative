@@ -103,7 +103,7 @@ body nav#main ul li a.visual {
   border-radius: 0 0 110px 110px;
 }
 /* line 114 */
-body nav#main ul li a.visual:hover {
+body nav#main ul li a.visual:hover, body nav#main ul li a.visual:focus {
   -o-border-radius: 0 0 121.0px 121.0px;
   -moz-border-radius: 0 0 121.0px 121.0px;
   -webkit-border-radius: 0 0 121.0px 121.0px;
@@ -128,7 +128,7 @@ body nav#main ul li a.interaction {
   border-radius: 0 0 80px 80px;
 }
 /* line 136 */
-body nav#main ul li a.interaction:hover {
+body nav#main ul li a.interaction:hover, body nav#main ul li a.interaction:focus {
   -o-border-radius: 0 0 92px 92px;
   -moz-border-radius: 0 0 92px 92px;
   -webkit-border-radius: 0 0 92px 92px;
@@ -153,7 +153,7 @@ body nav#main ul li a.inspiration {
   border-radius: 0 0 130px 130px;
 }
 /* line 158 */
-body nav#main ul li a.inspiration:hover {
+body nav#main ul li a.inspiration:hover, body nav#main ul li a.inspiration:focus {
   -o-border-radius: 0 0 143px 143px;
   -moz-border-radius: 0 0 143px 143px;
   -webkit-border-radius: 0 0 143px 143px;
@@ -177,7 +177,7 @@ body nav#main ul li a.about {
   border-radius: 0 0 100px 100px;
 }
 /* line 179 */
-body nav#main ul li a.about:hover {
+body nav#main ul li a.about:hover, body nav#main ul li a.about:focus {
   -o-border-radius: 0 0 110.0px 110.0px;
   -moz-border-radius: 0 0 110.0px 110.0px;
   -webkit-border-radius: 0 0 110.0px 110.0px;
@@ -468,16 +468,39 @@ body footer ul li.twitter a span {
 #main section#interaction h2 {
   color: #cc2a41;
 }
-/* line 450 */
+/* line 446 */
+#main section#interaction h3 {
+  font-family: 'PetitaMedium';
+  font-size: 20pt;
+  color: #64908a;
+}
+/* line 453 */
+#main section#interaction section#projects h3 {
+  font-size: 24pt;
+  clear: both;
+}
+/* line 459 */
+#main section#interaction section#projects .project a span {
+  background-color: #424254;
+  font-family: "PetitaBold";
+  font-weight: normal;
+}
+/* line 467 */
+#main section#interaction section#projects .description p {
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+/* line 480 */
 #main section#inspiration p {
   text-align: center;
 }
-/* line 457 */
+/* line 487 */
 #main section#about section#short-bio img {
   float: left;
   padding-bottom: 20px;
 }
-/* line 461 */
+/* line 491 */
 #main section#about section#short-bio p {
   width: 750px;
   line-height: 1.5em;
@@ -485,50 +508,50 @@ body footer ul li.twitter a span {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-/* line 470 */
+/* line 500 */
 #main section#about section#interaction-designer img {
   float: right;
   padding-bottom: 20px;
 }
-/* line 475 */
+/* line 505 */
 #main section#about section#interaction-designer p {
   width: 300px;
   float: left;
 }
-/* line 479 */
+/* line 509 */
 #main section#about section#interaction-designer ul {
   font-size: 1.2em;
   list-style-image: url("/images/bullet.png");
 }
-/* line 482 */
+/* line 512 */
 #main section#about section#interaction-designer ul li {
   padding: 16pt 0;
 }
-/* line 487 */
+/* line 517 */
 #main section#about section#background p {
   padding-bottom: 10px;
   margin-left: 20px;
 }
 
 /* end specific page layouts */
-/* line 495 */
+/* line 525 */
 a {
   text-decoration: none;
   color: #607890;
   font-family: 'PetitaLight';
   font-size: 1.2em;
 }
-/* line 497 */
+/* line 527 */
 a img {
   border: none;
 }
 
-/* line 505 */
+/* line 535 */
 p {
   font-family: "PetitaMedium";
 }
 
-/* line 509 */
+/* line 539 */
 #loader {
   height: 80px;
   background: url("/images/loading.gif") no-repeat 50% 50%;
@@ -536,23 +559,23 @@ p {
   display: none;
 }
 
-/* line 517 */
+/* line 547 */
 .highlight1 {
   color: #cc2a41;
 }
 
-/* line 521 */
+/* line 551 */
 .highlight2 {
   color: #64908a;
 }
 
 /* sticky footer styles */
-/* line 529 */
+/* line 559 */
 html, body {
   height: 100%;
 }
 
-/* line 530 */
+/* line 560 */
 #container {
   min-height: 100%;
   height: auto !important;
@@ -560,7 +583,7 @@ html, body {
   margin: 0 auto -220px;
 }
 
-/* line 537 */
+/* line 567 */
 footer, #push {
   height: 220px;
   clear: both;

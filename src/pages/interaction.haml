@@ -75,19 +75,75 @@
       %h3 Test
       .diagram.small
         %img{:id => "test", :src => "/images/process/test.png"}
-        
-  / %section#projects
-  /   %a{:name => "projects"}
-  /   %h2 
-  /     My Projects...
-  /   
-  /   Pixemo
-  /   
-  /   Envision
-  /   
-  /   dearQUT
-  / 
-  /   VideoMixer
-  /   
-  /   Scamper
+  %hr      
+  %section#projects
+    %a{:name => "projects"}
+    %h2 
+      My Projects...
+    
+    %h3
+      Pixemo
+    #pixemo-description{:class => "description"}
+      %p This is an interactive installation that explores human emotions in Twitter data. Each tweet leaves a trail depending on the emotion it represents and the space becomes an visualisation of the emotional state of the current Twitterverse.
+      %p The goal of this project was to create an explorative and playful work that allows the observer to control what emotions are present in the world and also interact directly with the physical representations of the emotions.
+      %p This project was presented at the Queensland University of Technology's 2009 'This Way Up' Exhibition.
+    #pixemo-images{:class => "project"}
+      %a
+        %span Screenshot of the visualisation in progress
+        %img{:src => '/images/interaction-projects/pixemo1.png'}
+      %a
+        %span 3D image of the physical casing (image by Suzanne Conkas)
+        %img{:src => '/images/interaction-projects/pixemo2.png'}
+      %a
+        %span Emotion markers
+        %img{:src => '/images/interaction-projects/pixemo3.png'}
+      %a
+        %span Project written in Processing and Java
+        %img{:src => '/images/interaction-projects/pixemo4.png'}
+    %h3
+      Envision
+    #envision-description{:class => "description"}
+      %p 
+        I was hired in early 2011 by a company called 
+        %a{:href => "http://ennova.com.au"} Ennova 
+        based in Brisbane, Australia who were developing a digital solution to construction management. Working with amazing team who were applying new thinking to an old, archaic industry, I developed the user experience of the application.
+      %p This involved firstly understanding the lives and the roles of people in this completely unfamiliar industry and witnessing their work from their perspective.
+      %p Using this information, the team and I formed stories for each of the tasks required for the client to complete their job.
+      %p From there, I designed wireframes that the design and functionality would be based on and put it all together to form the whole picture of the app.
+    #envision-images{:class => "project"}
+      %a
+        %span User persona cards of each type of user that would be interacting with the app.
+        %img{:src => '/images/interaction-projects/envision1.png'}
+      %a
+        %span Map out stories for each task
+        %img{:src => '/images/interaction-projects/envision2.png'}
+      %a
+        %span The wireframes
+        %img{:src => '/images/interaction-projects/envision3.png'}
+      %a
+        %span Putting it all together
+        %img{:src => '/images/interaction-projects/envision4.jpg'}
+    %h3
+      VideoMixer
+    #vm-description{:class => "description"}
+      %p VideoMixer was another experimental interface project that sequences music using youtube clips created using Quartz Composer.
+      %p 
+        See it in action
+        %a{:href => "http://www.youtube.com/watch?v=RXDzgP2cAnM&feature=player_embedded"} here.
+    #vm-images{:class => "project"}
+      %a
+        %span VideoMixer in action
+        %img{:src => '/images/interaction-projects/vm1.png'}
+      %a
+        %span Magic happens when you start combining multiple videos!
+        %img{:src => '/images/interaction-projects/vm2.png'}
+      %a
+        %span Behind the scenes - written using visual programming
+        %img{:src => '/images/interaction-projects/vm3.png'}
+      
+    %h3
+      Scamper
+    #scamper-description{:class => "description"}
+      %p This is another earlier project I was involved in the conception and technical development of.
+      %p Scamper is an educational tool that allows classrooms to create scavenger hunts for students to use technology to undertake learning in an engaging manner.
   

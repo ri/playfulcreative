@@ -25,6 +25,11 @@ $(window).load(function() {
   
   // $container
 
-  $('a#fancy').fancybox();
+  $('a#fancy').fancybox({
+    'autoDimensions'  : false,
+    'transitionIn'    : 'none',
+    'transitionOut'   : 'none',
+    'titleShow'       : 'none',
+  });
 
 });

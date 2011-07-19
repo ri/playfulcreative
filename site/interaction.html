@@ -17,11 +17,10 @@
   <link href='/stylesheets/boilerplate.css' rel='stylesheet' />
   <link href='/stylesheets/screen.css' rel='stylesheet' />
   <link href='/stylesheets/fonts.css' rel='stylesheet' />
-  <link href='/stylesheets/nivo-slider.css' rel='stylesheet' />
   <link href='/stylesheets/isotope.css' rel='stylesheet' />
-  <link href='/stylesheets/slider-custom.css' rel='stylesheet' />
   <link href='/fancybox/jquery.fancybox-1.3.4.css' rel='stylesheet' />
   <link href='/stylesheets/interaction-process.css' rel='stylesheet' />
+  <link href='/stylesheets/accordionImageMenu.css' rel='stylesheet' />
   <script type='text/javascript'>
     //<![CDATA[
       var _gaq = _gaq || [];
@@ -153,25 +152,101 @@
             </div>
           </div>
         </section>
-        <!-- %section#projects -->
-        <!-- %a{:name => "projects"} -->
-        <!-- %h2 -->
-        <!-- My Projects... -->
-        <!--
-        -->
-        <!-- Pixemo -->
-        <!--
-        -->
-        <!-- Envision -->
-        <!--
-        -->
-        <!-- dearQUT -->
-        <!--
-        -->
-        <!-- VideoMixer -->
-        <!--
-        -->
-        <!-- Scamper -->
+        <hr />
+        <section id='projects'>
+          <a name='projects'></a>
+          <h2>
+            My Projects...
+          </h2>
+          <h3>
+            Pixemo
+          </h3>
+          <div class='description' id='pixemo-description'>
+            <p>This is an interactive installation that explores human emotions in Twitter data. Each tweet leaves a trail depending on the emotion it represents and the space becomes an visualisation of the emotional state of the current Twitterverse.</p>
+            <p>The goal of this project was to create an explorative and playful work that allows the observer to control what emotions are present in the world and also interact directly with the physical representations of the emotions.</p>
+            <p>This project was presented at the Queensland University of Technology's 2009 'This Way Up' Exhibition.</p>
+          </div>
+          <div class='project' id='pixemo-images'>
+            <a>
+              <span>Screenshot of the visualisation in progress</span>
+              <img src='/images/interaction-projects/pixemo1.png' />
+            </a>
+            <a>
+              <span>3D image of the physical casing (image by Suzanne Conkas)</span>
+              <img src='/images/interaction-projects/pixemo2.png' />
+            </a>
+            <a>
+              <span>Emotion markers</span>
+              <img src='/images/interaction-projects/pixemo3.png' />
+            </a>
+            <a>
+              <span>Project written in Processing and Java</span>
+              <img src='/images/interaction-projects/pixemo4.png' />
+            </a>
+          </div>
+          <h3>
+            Envision
+          </h3>
+          <div class='description' id='envision-description'>
+            <p>
+              I was hired in early 2011 by a company called
+              <a href='http://ennova.com.au'>Ennova</a>
+              based in Brisbane, Australia who were developing a digital solution to construction management. Working with amazing team who were applying new thinking to an old, archaic industry, I developed the user experience of the application.
+            </p>
+            <p>This involved firstly understanding the lives and the roles of people in this completely unfamiliar industry and witnessing their work from their perspective.</p>
+            <p>Using this information, the team and I formed stories for each of the tasks required for the client to complete their job.</p>
+            <p>From there, I designed wireframes that the design and functionality would be based on and put it all together to form the whole picture of the app.</p>
+          </div>
+          <div class='project' id='envision-images'>
+            <a>
+              <span>User persona cards of each type of user that would be interacting with the app.</span>
+              <img src='/images/interaction-projects/envision1.png' />
+            </a>
+            <a>
+              <span>Map out stories for each task</span>
+              <img src='/images/interaction-projects/envision2.png' />
+            </a>
+            <a>
+              <span>The wireframes</span>
+              <img src='/images/interaction-projects/envision3.png' />
+            </a>
+            <a>
+              <span>Putting it all together</span>
+              <img src='/images/interaction-projects/envision4.jpg' />
+            </a>
+          </div>
+          <h3>
+            VideoMixer
+          </h3>
+          <div class='description' id='vm-description'>
+            <p>VideoMixer was another experimental interface project that sequences music using youtube clips created using Quartz Composer.</p>
+            <p>
+              See it in action
+              <a href='http://www.youtube.com/watch?v=RXDzgP2cAnM&amp;feature=player_embedded'>here.</a>
+            </p>
+          </div>
+          <div class='project' id='vm-images'>
+            <a>
+              <span>VideoMixer in action</span>
+              <img src='/images/interaction-projects/vm1.png' />
+            </a>
+            <a>
+              <span>Magic happens when you start combining multiple videos!</span>
+              <img src='/images/interaction-projects/vm2.png' />
+            </a>
+            <a>
+              <span>Behind the scenes - written using visual programming</span>
+              <img src='/images/interaction-projects/vm3.png' />
+            </a>
+          </div>
+          <h3>
+            Scamper
+          </h3>
+          <div class='description' id='scamper-description'>
+            <p>This is another earlier project I was involved in the conception and technical development of.</p>
+            <p>Scamper is an educational tool that allows classrooms to create scavenger hunts for students to use technology to undertake learning in an engaging manner.</p>
+          </div>
+        </section>
       </section>
     </div>
     <div id='push'></div>
@@ -208,6 +283,7 @@
     <!-- window.jQuery(function() { $('#works').css('visibility', 'hidden'); }); -->
   </footer>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js'></script>
   <script type='text/javascript'>
     //<![CDATA[
       window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>");
@@ -216,11 +292,13 @@
   <script src='js/plugins.js'></script>
   <script src='js/libs/modernizr-1.7.min.js'></script>
   <script src='js/libs/jquery.nivo.slider.pack.js'></script>
-  <script src='js/libs/jquery.isotope.js'></script>
+  <!-- %script{ :src => "js/libs/jquery.isotope.js"} -->
   <script src='js/libs/jquery.isotope.min.js'></script>
+  <script src='js/libs/accordionImageMenu.js'></script>
   <script src='fancybox/jquery.mousewheel-3.0.4.pack.js'></script>
   <script src='fancybox/jquery.fancybox-1.3.4.pack.js'></script>
   <script src='js/script.js'></script>
+  <script src='js/interaction.js'></script>
   <!--[if lt IE 7 ]>
     <script src='js/libs/dd_belatedpng.js'></script>
     <script>

@@ -111,7 +111,7 @@ body {
             -webkit-border-radius: $visual-border-values;
             border-radius: $visual-border-values;
 
-             &:hover  {
+             &:hover, &:focus  {
               -o-border-radius: $visual-border-values-big;
               -moz-border-radius: $visual-border-values-big;
               -webkit-border-radius: $visual-border-values-big;
@@ -133,7 +133,7 @@ body {
             border-radius: $interaction-border-values;
             
 
-            &:hover  {
+            &:hover, &:focus  {
               -o-border-radius: $interaction-border-values-big;
               -moz-border-radius: $interaction-border-values-big;
               -webkit-border-radius: $interaction-border-values-big;
@@ -155,7 +155,7 @@ body {
              -webkit-border-radius: $inspiration-border-values;
              border-radius: $inspiration-border-values;
               
-               &:hover  {
+             &:hover, &:focus  {
                  -o-border-radius: $inspiration-border-values-big;
                  -moz-border-radius: $inspiration-border-values-big;
                  -webkit-border-radius: $inspiration-border-values-big;
@@ -176,7 +176,7 @@ body {
               -webkit-border-radius: $about-border-values;
               border-radius: $about-border-values;
 
-               &:hover{ 
+              &:hover, &:focus{ 
                  -o-border-radius: $about-border-values-big;
                  -moz-border-radius: $about-border-values-big;
                  -webkit-border-radius: $about-border-values-big;
@@ -441,6 +441,36 @@ body {
     
     h2 {
       color: $red;
+    }
+    
+    h3 {
+      font-family: 'PetitaMedium';
+      font-size: 20pt;
+      color: $teal;
+    }
+    
+    section#projects {
+      h3 {
+        font-size: 24pt;
+        clear: both;
+      }
+      .project {
+        
+        a span {
+          background-color: $grey-dark-blue;
+          font-family: "PetitaBold";
+          font-weight: normal;
+        }
+      }
+      .description {
+        
+        p {
+          line-height: 1.4em;
+          font-size: 1.2em;
+          margin-bottom: 1em;
+        }
+
+      }
     }
   }
   /* end interaction */

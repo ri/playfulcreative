@@ -26,29 +26,26 @@ section#interaction #process .number {
 }
 /* line 18 */
 section#interaction #process h3 {
-  font-family: 'LeagueGothic';
-  color: #64908a;
-  font-size: 20pt;
   display: inline;
 }
-/* line 25 */
+/* line 22 */
 section#interaction #process .diagram {
   width: 960px;
   position: relative;
 }
-/* line 29 */
+/* line 26 */
 section#interaction #process .diagram.small {
   width: 450px;
 }
-/* line 30 */
+/* line 27 */
 section#interaction #process .diagram img, section#interaction #process .diagram div, section#interaction #process .diagram li {
   position: absolute;
 }
-/* line 34 */
+/* line 31 */
 section#interaction #process #process1 .diagram {
   height: 300px;
 }
-/* line 36 */
+/* line 33 */
 section#interaction #process #process1 .diagram img {
   top: 10px;
   height: 280px;
@@ -58,230 +55,230 @@ section#interaction #process #process1 .diagram img {
   -o-transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
   transition: height 0.2s ease, width 0.2s ease, left 0.2s ease, top 0.2s ease;
 }
-/* line 45 */
+/* line 42 */
 section#interaction #process #process1 .diagram img:hover {
   height: 300px;
   width: 300px;
   top: 0;
 }
-/* line 51 */
+/* line 48 */
 section#interaction #process #process1 .diagram img#p1 {
   left: 80px;
   z-index: 0;
 }
-/* line 54 */
+/* line 51 */
 section#interaction #process #process1 .diagram img#p1:hover {
   z-index: 2;
 }
-/* line 57 */
+/* line 54 */
 section#interaction #process #process1 .diagram img#p2 {
   left: 340px;
   z-index: 1;
 }
-/* line 59 */
+/* line 56 */
 section#interaction #process #process1 .diagram img#p2:hover {
   left: 330px;
 }
-/* line 63 */
+/* line 60 */
 section#interaction #process #process1 .diagram img#p3 {
   left: 600px;
   z-index: 0;
 }
-/* line 66 */
+/* line 63 */
 section#interaction #process #process1 .diagram img#p3:hover {
   left: 580px;
   z-index: 2;
 }
-/* line 72 */
+/* line 69 */
 section#interaction #process #process2 .diagram {
   font-family: PetitaMedium;
   font-size: 16pt;
   height: 380px;
 }
-/* line 77 */
+/* line 74 */
 section#interaction #process #process2 .diagram .label-a {
   color: #cc2a41;
   top: 130px;
   left: 150px;
 }
-/* line 78 */
+/* line 75 */
 section#interaction #process #process2 .diagram .label-b {
   color: #64908a;
   top: 130px;
   left: 630px;
 }
-/* line 80 */
+/* line 77 */
 section#interaction #process #process2 .diagram .person {
   top: 20px;
 }
-/* line 82 */
+/* line 79 */
 section#interaction #process #process2 .diagram .person#person-a {
   left: 190px;
 }
-/* line 83 */
+/* line 80 */
 section#interaction #process #process2 .diagram .person#person-b {
   left: 670px;
 }
-/* line 86 */
+/* line 83 */
 section#interaction #process #process2 .diagram .lines {
   top: 160px;
 }
-/* line 89 */
+/* line 86 */
 section#interaction #process #process2 .diagram .lines#lines-a {
   left: 140px;
 }
-/* line 90 */
+/* line 87 */
 section#interaction #process #process2 .diagram .lines#lines-b {
   left: 620px;
 }
-/* line 93 */
+/* line 90 */
 section#interaction #process #process2 .diagram .this {
   -webkit-transition: width 0.2s ease, left 0.2s ease;
   -moz-transition: width 0.2s ease, left 0.2s ease;
   -o-transition: width 0.2s ease, left 0.2s ease;
   transition: width 0.2s ease, left 0.2s ease;
 }
-/* line 106 */
+/* line 103 */
 section#interaction #process #process2 .diagram .this#this-a1 {
   top: 200px;
   left: 65px;
   width: 80px;
 }
-/* line 107 */
+/* line 104 */
 section#interaction #process #process2 .diagram .this#this-a1:hover {
   width: 90px;
   left: 60px;
 }
-/* line 108 */
+/* line 105 */
 section#interaction #process #process2 .diagram .this#this-a2 {
   top: 255px;
   left: 190px;
   width: 110px;
 }
-/* line 109 */
+/* line 106 */
 section#interaction #process #process2 .diagram .this#this-a2:hover {
   width: 130px;
   left: 180px;
 }
-/* line 110 */
+/* line 107 */
 section#interaction #process #process2 .diagram .this#this-a3 {
   top: 190px;
   left: 320px;
   width: 90px;
 }
-/* line 111 */
+/* line 108 */
 section#interaction #process #process2 .diagram .this#this-a3:hover {
   width: 100px;
   left: 315px;
 }
-/* line 113 */
+/* line 110 */
 section#interaction #process #process2 .diagram .this#this-b1 {
   top: 285px;
   left: 550px;
   width: 110px;
 }
-/* line 114 */
+/* line 111 */
 section#interaction #process #process2 .diagram .this#this-b1:hover {
   width: 130px;
   left: 540px;
 }
-/* line 115 */
+/* line 112 */
 section#interaction #process #process2 .diagram .this#this-b2 {
   top: 215px;
   left: 680px;
   width: 90px;
 }
-/* line 116 */
+/* line 113 */
 section#interaction #process #process2 .diagram .this#this-b2:hover {
   width: 110px;
   left: 670px;
 }
-/* line 117 */
+/* line 114 */
 section#interaction #process #process2 .diagram .this#this-b3 {
   top: 250px;
   left: 800px;
   width: 100px;
 }
-/* line 118 */
+/* line 115 */
 section#interaction #process #process2 .diagram .this#this-b3:hover {
   width: 120px;
   left: 790px;
 }
-/* line 123 */
+/* line 120 */
 section#interaction #process #process3 .diagram {
   height: 170px;
 }
-/* line 131 */
+/* line 128 */
 section#interaction #process #process3 #arrow {
   left: 340px;
 }
-/* line 133 */
+/* line 130 */
 section#interaction #process #process3 .this {
   -webkit-transition: width 0.2s ease, left 0.2s ease;
   -moz-transition: width 0.2s ease, left 0.2s ease;
   -o-transition: width 0.2s ease, left 0.2s ease;
   transition: width 0.2s ease, left 0.2s ease;
 }
-/* line 139 */
+/* line 136 */
 section#interaction #process #process3 .this#this-c1 {
   top: 50px;
   left: 60px;
   width: 110px;
 }
-/* line 140 */
+/* line 137 */
 section#interaction #process #process3 .this#this-c1:hover {
   width: 130px;
   left: 50px;
 }
-/* line 141 */
+/* line 138 */
 section#interaction #process #process3 .this#this-c2 {
   top: 70px;
   left: 250px;
   width: 70px;
 }
-/* line 142 */
+/* line 139 */
 section#interaction #process #process3 .this#this-c2:hover {
   width: 80px;
   left: 245px;
 }
-/* line 143 */
+/* line 140 */
 section#interaction #process #process3 .this#this-c3 {
   top: 55px;
   left: 400px;
   width: 100px;
 }
-/* line 144 */
+/* line 141 */
 section#interaction #process #process3 .this#this-c3:hover {
   width: 120px;
   left: 390px;
 }
-/* line 145 */
+/* line 142 */
 section#interaction #process #process3 .this#this-c4 {
   top: 40px;
   left: 590px;
   width: 130px;
 }
-/* line 146 */
+/* line 143 */
 section#interaction #process #process3 .this#this-c4:hover {
   width: 150px;
   left: 580px;
 }
-/* line 147 */
+/* line 144 */
 section#interaction #process #process3 .this#this-c5 {
   top: 65px;
   left: 800px;
   width: 80px;
 }
-/* line 148 */
+/* line 145 */
 section#interaction #process #process3 .this#this-c5:hover {
   width: 90px;
   left: 795px;
 }
-/* line 155 */
+/* line 152 */
 section#interaction #process #process4 .diagram {
   height: 180px;
 }
-/* line 157 */
+/* line 154 */
 section#interaction #process #process4 ul {
   left: 50px;
   list-style-type: none;
@@ -289,7 +286,7 @@ section#interaction #process #process4 ul {
   font-size: 26pt;
   color: #cc2a41;
 }
-/* line 163 */
+/* line 160 */
 section#interaction #process #process4 ul li {
   margin: 0;
   padding: 12px 0 0 8px;
@@ -298,62 +295,62 @@ section#interaction #process #process4 ul li {
   background: url("/images/process/circle.png");
   top: 60px;
 }
-/* line 170 */
+/* line 167 */
 section#interaction #process #process4 ul li:nth-child(1) {
   left: 80px;
 }
-/* line 174 */
+/* line 171 */
 section#interaction #process #process4 ul li:nth-child(2) {
   left: 235px;
 }
-/* line 178 */
+/* line 175 */
 section#interaction #process #process4 ul li:nth-child(3) {
   left: 390px;
   top: 10px;
 }
-/* line 183 */
+/* line 180 */
 section#interaction #process #process4 ul li:nth-child(4) {
   left: 540px;
 }
-/* line 187 */
+/* line 184 */
 section#interaction #process #process4 ul li:nth-child(5) {
   left: 690px;
   top: 10px;
 }
-/* line 192 */
+/* line 189 */
 section#interaction #process #process4 ul li:nth-child(6) {
   left: 690px;
   top: 106px;
 }
-/* line 198 */
+/* line 195 */
 section#interaction #process #process4 .arrow {
   top: 78px;
 }
-/* line 200 */
+/* line 197 */
 section#interaction #process #process4 .arrow#arrow1 {
   left: 180px;
 }
-/* line 201 */
+/* line 198 */
 section#interaction #process #process4 .arrow#arrow2 {
   left: 335px;
   top: 48px;
 }
-/* line 202 */
+/* line 199 */
 section#interaction #process #process4 .arrow#arrow3 {
   left: 490px;
   top: 48px;
 }
-/* line 203 */
+/* line 200 */
 section#interaction #process #process4 .arrow#arrow4 {
   left: 635px;
   top: 48px;
 }
-/* line 204 */
+/* line 201 */
 section#interaction #process #process4 .arrow#arrow5 {
   left: 635px;
   top: 106px;
 }
-/* line 206 */
+/* line 203 */
 section#interaction #process #process4 #dotted-line {
   width: 190px;
   height: 4px;
@@ -361,19 +358,19 @@ section#interaction #process #process4 #dotted-line {
   top: 90px;
   left: 335px;
 }
-/* line 216 */
+/* line 213 */
 section#interaction #process #process5 .diagram {
-  height: 250px;
+  height: 200px;
 }
-/* line 217 */
+/* line 214 */
 section#interaction #process #process5 .diagram img {
   left: 60px;
 }
-/* line 220 */
+/* line 217 */
 section#interaction #process #process6 .diagram {
-  height: 300px;
+  height: 200px;
 }
-/* line 221 */
+/* line 218 */
 section#interaction #process #process6 .diagram img {
   left: 100px;
 }

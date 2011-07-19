@@ -16,9 +16,6 @@ section#interaction {
     }
   
     h3 {
-      font-family: 'LeagueGothic';
-      color: $teal;
-      font-size: 20pt;
       display: inline;
     }
   
@@ -213,11 +210,11 @@ section#interaction {
     }
     
     #process5 {
-      .diagram {height: 250px;
+      .diagram {height: 200px;
         img{left: 60px;}}
     }
     #process6 {
-      .diagram {height: 300px;
+      .diagram {height: 200px;
         img{left: 100px;}}
     }
   }
