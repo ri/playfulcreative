@@ -485,6 +485,10 @@ body footer ul li.twitter a span {
   font-family: "PetitaBold";
   font-weight: normal;
 }
+/* line 465 */
+#main section#interaction section#projects .description {
+  clear: both;
+}
 /* line 467 */
 #main section#interaction section#projects .description p {
   line-height: 1.4em;
