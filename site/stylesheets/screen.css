@@ -479,6 +479,10 @@ body footer ul li.twitter a span {
   font-size: 24pt;
   clear: both;
 }
+/* line 457 */
+#main section#interaction section#projects .project {
+  background: url("/images/loading.gif") no-repeat 50% 50%;
+}
 /* line 459 */
 #main section#interaction section#projects .project a span {
   background-color: #424254;
