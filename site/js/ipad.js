@@ -1,5 +1,3 @@
-pageInit(function() {
-  $("#home").swiperight(function() {
-      $.mobile.changePage("#visual");
-  });
+$("#home").swiperight('pageinit', function() {
+    $.mobile.changePage("#visual");
 });
