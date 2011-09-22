@@ -9,12 +9,15 @@
         %a{:href => "#type", "data-filter" =>".type"} Type
         |
       %li
+        %a{:href => "#brand", "data-filter" =>".brand"} Brand
+        |
+      %li
         %a{:href => "#all", "data-filter" =>"*"}  All
   %div{:id => "loader"}
   %div{:id => "works"}
-    %div{:class => "work col2 graphic"}
-      %a{:id => "fancy", :rel => "gallery", :href => "/images/graphics/flower2.png"}
-        %img{:width => "230", :height => "230", :title => "", :src => "/images/graphics/thumbs/flower2.png"}
+    %div{:class => "work col2 brand"}
+      %a{:id => "fancy", :rel => "gallery", :href => "/images/graphics/pb&j.png"}
+        %img{:width => "230", :height => "230", :title => "", :src => "/images/graphics/thumbs/pb&j.png"}
     %div{:class => "work col4 graphic"}
       %a{:id => "fancy", :rel => "gallery", :href => "/images/graphics/whale.png"}
         %img{:width => "470", :height => "230", :title => "", :src => "/images/graphics/thumbs/whale.png"}
@@ -30,6 +33,7 @@
     %div{:class => "work col4 graphic"}
       %a{:id => "fancy", :rel => "gallery", :href => "/images/graphics/baubles.png"}   
         %img{:width => "470", :height => "230", :title => "", :src => "/images/graphics/thumbs/baubles.png"}
+        
     %div{:class => "work col2 graphic"}
       %a{:id => "fancy", :rel => "gallery", :href => "/images/graphics/cheese.png"}   
         %img{:width => "230", :height => "230", :title => "", :src => "/images/graphics/thumbs/cheese.png"}
