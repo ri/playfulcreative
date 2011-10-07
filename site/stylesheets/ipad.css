@@ -1,0 +1,13 @@
+/* line 1 */
+.project {
+  overflow: hidden;
+}
+/* line 4 */
+.project .project-images {
+  display: inline;
+  overflow: hidden;
+}
+/* line 8 */
+.project img {
+  float: left;
+}

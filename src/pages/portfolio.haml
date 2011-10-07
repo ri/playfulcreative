@@ -1,6 +1,45 @@
 - @layout = "ipad"
 %div{"data-role" => "page", :id => "home"}
-  %a{:href => "#visual", "data-transition" => "slidedown"}
-    Midwest Young Artists
+	%a{:href => "#ux", "data-role" => "button", "data-transition" => "slidedown"}
+		User Experience
+	%a{:href => "#graphic", "data-role" => "button", "data-transition" => "slidedown"}
+		Graphic Design
+	%a{:href => "#web", "data-role" => "button", "data-transition" => "slidedown"}
+		Web Design
+
+- #Category Pages  	
 %div{"data-role" => "page", "data-theme" => "a", :id => "visual"}
-  %img{:src => "images/ipad/MYA.png"}
+	%img{:src => "images/ipad/MYA.png"}
+
+%div{"data-role" => "page", "data-theme" => "a", :id => "ux"}
+	%div{"data-role" => "header"}
+		%h1 User Experience
+		%a{"data-rel" => "back", "data-theme" => "b", :class => "ui-btn-right", "data-icon" => "back"}
+			Back
+	%div{"data-role" => "content", "data-theme" => "a"}
+		%a{:href => "#envision", "data-role" => "button", "data-transition" => "slidedown"}
+			Envision
+
+	- #UX Project Pages
+%div{"data-role" => "page", "data-theme" => "a", :id => "envision", :class => "project"}
+	%div{"data-role" => "header"}
+		%h1 Envision App
+		%a{"href" => "#ux", "data-theme" => "b", :class => "ui-btn-right", "data-icon" => "back"}
+			Back to User Experience
+	%div{:class =>"project-images"}
+		%a{:href => "images/ipad/envision/dashboard.png", :rel => "external"}
+			Gallery
+		%a{:href => "images/ipad/envision/timesheets.png", :rel => "external"}
+
+
+%div{"data-role" => "page", "data-theme" => "a", :id => "graphic"}
+	%div{"data-role" => "header"}
+		%h1 Graphic Design
+		%a{"data-rel" => "back", "data-theme" => "b", :class => "ui-btn-right", "data-icon" => "back"}
+			Back
+
+%div{"data-role" => "page", "data-theme" => "a", :id => "web"}
+	%div{"data-role" => "header"}
+		%h1 Web Design
+		%a{"data-rel" => "back", "data-theme" => "b", :class => "ui-btn-right", "data-icon" => "back"}
+			Back

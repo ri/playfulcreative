@@ -1,0 +1,11 @@
+.project {
+	overflow: hidden;
+
+	.project-images {
+		display: inline;
+		overflow: hidden;
+	}
+	img {
+		float: left;
+	}
+}

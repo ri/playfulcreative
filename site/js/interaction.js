@@ -22,4 +22,12 @@ $(document).ready(function() {
 	  'border'    : 0,
 	  'color'     : "none"
 	});
+
+	$('#cm-images').AccordionImageMenu({
+	  'closeDim'  : 240,
+	  'openDim'   : 400,
+	  'height'    : 300,
+	  'border'    : 0,
+	  'color'     : "none"
+	});
 });
