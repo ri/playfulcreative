@@ -17,8 +17,6 @@
   <link href='/stylesheets/boilerplate.css' rel='stylesheet' />
   <link href='/stylesheets/screen.css' rel='stylesheet' />
   <link href='/stylesheets/fonts.css' rel='stylesheet' />
-  <link href='/stylesheets/isotope.css' rel='stylesheet' />
-  <link href='/fancybox/jquery.fancybox-1.3.4.css' rel='stylesheet' />
   <link href='/stylesheets/nivo-slider.css' rel='stylesheet' />
   <link href='/stylesheets/slider-custom.css' rel='stylesheet' />
   <script type='text/javascript'>
@@ -71,7 +69,95 @@
     <div id='main' role='main'>
       <section id='projects'>
         <h1>Projects</h1>
-        <h3>Pixemo</h3>
+        <section class='project' id='envision'>
+          <h3>Envision</h3>
+          <div class='sliderwrapper'>
+            <div class='slider nivoSlider' id='envision-slider'>
+              <img src='/images/projects/envision1.png' title='#envision1' />
+              <img src='/images/projects/envision2.png' title='#envision2' />
+              <img src='/images/projects/envision3.png' title='#envision3' />
+              <img src='/images/projects/envision4.png' title='#envision4' />
+            </div>
+            <div class='nivo-html-caption' id='envision1'>
+              <h4>The Problem</h4>
+              <p>Construction is a vital and massive industry that involves processes with many interconnected parts, all of which need to be executed with precision. However, management is supported by mountains of spreadsheets and rigid software that is decades behind what is possible.</p>
+              <p>My client Ennova, is trying to breath new life into this archaic industry by utilising new technology and agile methods to create software that is lean and efficient. Their application, Envision is supported by a young and talented engineering team, but what they lacked was someone who could understand the needs of the users.</p>
+            </div>
+            <div class='nivo-html-caption' id='envision2'>
+              <h4>The Process</h4>
+              <p>Working closely with stakeholders, I had a crash course introduction into the construction project life cycle. With this information, I mapped out the key roles that would interact with the app and researched their responsibilities and technical proficiency.</p>
+              <p>I then identified and prioritised the goals that they wanted to accomplish with the system and mapped out the specific tasks that fulfilled the goals.</p>
+              <p>From there I worked with engineers to figure out the features required for the initial release.</p>
+            </div>
+            <div class='nivo-html-caption' id='envision3'>
+              <h4>The Solution</h4>
+              <p>For each role, I developed a set of wireframes for each task flow and revised them according to feedback from the stakeholders and engineering team.</p>
+              <p>It was challenging to keep switching into the mindsets of different types of people and trying to get a feel of what would be most intuitive for them, as well as making sure what I was designing would help rather than hinder their work.</p>
+            </div>
+            <div class='nivo-html-caption' id='envision4'>
+              <h4>The Application</h4>
+              <p>For such a complicated industry, even the simplest minimal viable product is still a massive undertaking and development is still in progress.</p>
+              <p></p>
+              Keep an eye on this space for most images of the finished product.
+              <p>
+                You can find out more about the app from
+                <a href='http://envisionapp.com/'>here</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class='project' id='pixemo'>
+          <h3>Pixemo</h3>
+          <div class='sliderwrapper'>
+            <div class='slider nivoSlider' id='pixemo-slider'>
+              <img src='/images/projects/pixemo1.png' title='#pixemo1' />
+              <img src='/images/projects/pixemo2.png' title='#pixemo2' />
+              <img src='/images/projects/pixemo3.png' title='#pixemo3' />
+              <img src='/images/projects/pixemo4.png' title='#pixemo4' />
+              <img src='/images/projects/pixemo5.png' title='#pixemo5' />
+            </div>
+            <div class='nivo-html-caption' id='pixemo1'>
+              <h4>The Brief</h4>
+              <p>The 2009 <strong>This Way Up</strong> exhibition was a chance to showcase the culmination of knowledge acquired through 4 years of design education. Open to the public, this was the opportunity to impress friends, peers, industry figures and potential employers.</p>
+              <p>The challenge for me was to create an interactive piece that was both creative and novel, while experimenting with bridging the gap between art and technology.</p>
+              <small>
+                Image by
+                <a href='http://jacqueprior.com'>
+                  Jacque Prior
+                </a>
+              </small>
+            </div>
+            <div class='nivo-html-caption' id='pixemo2'>
+              <h4>The Solution</h4>
+              <p>Working with a partner, we decided to create a physical object that would invite people to directly interact with emotions on the web. Thus, Pixemo was born.</p>
+              <p>This installation would tap into data from Twitter and display each message as an expressive pixel figure to invoke a sense of curiousity and play.</p>
+              <small>
+                Images by
+                <a href='www.suzanneconkas.com'>
+                  Suzanne Conkas
+                </a>
+              </small>
+            </div>
+            <div class='nivo-html-caption' id='pixemo3'>
+              <h4>The Construction</h4>
+              <p>The box container for the installation was constructed from wood that was then painted and decorated. The projector was then placed inside and propped in a way to project at the transparent piece of acrylic. Multiple mirrors had to be used to reflect the projection so it would be the right size due the box size constraints. The box also contained a video camera that would stream to a laptop and allow motion detection.</p>
+            </div>
+            <div class='nivo-html-caption' id='pixemo4'>
+              <h4>The Development Process</h4>
+              <p>Fueling the backend code was Processing and Java. The connection with twitter was handled by a Java library. It was a challenging but enlightening experience battling with flocking algorithms and edge detection.</p>
+            </div>
+            <div class='nivo-html-caption' id='pixemo5'>
+              <h4>The Exhibition</h4>
+              <p>
+                Opening night took place on 11 November and Pixemo was unveiled to the public for the first time.
+              </p>
+              <p>
+                See a screencast of the installation in action
+                <a href='http://www.youtube.com/watch?v=fIbrJ-FZNag'>here</a>
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
     <div id='push'></div>
@@ -116,7 +202,7 @@
   </script>
   <script src='js/plugins.js'></script>
   <script src='js/libs/modernizr-1.7.min.js'></script>
-  <!-- %script{ :src => "js/libs/jquery.isotope.js"} -->
+  <script src='js/libs/jquery.nivo.slider.pack.js'></script>
   <script src='js/libs/jquery.isotope.min.js'></script>
   <script src='js/libs/accordionImageMenu.js'></script>
   <script src='fancybox/jquery.mousewheel-3.0.4.pack.js'></script>

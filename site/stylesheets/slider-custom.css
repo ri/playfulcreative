@@ -1,30 +1,35 @@
 /* line 1 */
-#slider {
+.sliderwrapper {
+  -moz-box-shadow: 2px 2px 5px #A8A8A8;
+  -webkit-box-shadow: 2px 2px 5px #A8A8A8;
+  box-shadow: 2px 2px 5px #A8A8A8;
+  margin: 0 auto;
+  background: url("/images/darkbgtex.png");
+  position: relative;
+}
+
+/* line 10 */
+.slider {
+  position: relative;
   background: url(/images/loading.gif) no-repeat 50% 50%;
 }
 
-/* line 4 */
-#slider img {
+/* line 14 */
+.slider img {
   position: absolute;
   top: 0px;
   left: 0px;
   display: none;
 }
 
-/* line 10 */
-#slider a {
-  border: 0;
-  display: block;
-}
-
-/* line 15 */
+/* line 22 */
 .nivo-controlNav {
   position: absolute;
-  bottom: -30px;
-  left: 400px;
+  bottom: -10px;
+  left: 45%;
 }
 
-/* line 20 */
+/* line 27 */
 .nivo-controlNav a {
   display: block;
   width: 22px;
@@ -36,12 +41,12 @@
   float: left;
 }
 
-/* line 30 */
+/* line 37 */
 .nivo-controlNav a.active {
   background-position: 0 -22px;
 }
 
-/* line 35 */
+/* line 42 */
 .nivo-directionNav a {
   position: absolute;
   top: 0px;
@@ -51,7 +56,7 @@
   text-indent: -9999px;
   border: 0;
 }
-/* line 44 */
+/* line 51 */
 .nivo-directionNav a .arrow {
   position: absolute;
   background: url(/images/arrows.png) no-repeat;
@@ -59,37 +64,58 @@
   height: 85px;
   top: 150px;
 }
-/* line 53 */
+/* line 60 */
 .nivo-directionNav a:hover .arrow {
   background-position: 0 -85px;
 }
 
-/* line 59 */
+/* line 66 */
 a.nivo-nextNav {
   right: -45px;
 }
-/* line 62 */
+/* line 69 */
 a.nivo-nextNav .arrow {
   right: 0px;
   background-position: -45px 0;
 }
-/* line 67 */
+/* line 74 */
 a.nivo-nextNav:hover .arrow {
   background-position: -45px -85px;
 }
 
-/* line 72 */
+/* line 79 */
 a.nivo-prevNav {
   left: -45px;
 }
 
-/* line 76 */
+/* line 83 */
 .nivo-caption {
-  text-shadow: none;
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f3f3f3;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 470px;
+  height: 240px;
+  padding: 10px 15px;
+  z-index: 20;
+  -moz-transition: opacity 0.4s linear;
+  -webkit-transition: -webkit-opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+}
+/* line 101 */
+.nivo-caption:hover {
+  filter: alpha(opacity=90);
+  -moz-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  opacity: 0.9;
 }
 
-/* line 80 */
+/* line 108 */
 .nivo-caption a {
   color: #efe9d1;
   text-decoration: underline;
