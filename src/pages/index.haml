@@ -7,14 +7,10 @@
     graphic 
   designer, Ri Liu.
 
-#sliderwrapper
-  %section{:id => "slider", :class => "nivoSlider"}
-    %a{:href => "visual.html", :title => "see my visual design works"}
-      = img "whale.png"
-    %a{:href => "interaction.html#envision", :title => "see the ux work I did for the Envision app"}
-      = img "wireframes.png"
-    %a{:href => "interaction.html#pixemo", :title => "see the work I did on the Pixemo project"}
-      = img "pixemo.png"
-    %a{:href => "visual.html", :title => "see my visual design works"}
-      = img "globes.png"
+.sliderwrapper
+  %section{:id => "home-slider", :class => "slider nivoSlider"}
+    = img "whale.png"
+    = img "wireframes.png"
+    = img "pixemo.png"
+    = img "globes.png"
 

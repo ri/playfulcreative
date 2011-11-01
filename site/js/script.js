@@ -8,10 +8,34 @@ $('#works').imagesLoaded( function() {
 
 $(document).ready(function() { 
     var $container = $('#works');
-    $('#slider').nivoSlider({
+    $('#home-slider').nivoSlider({
               effect: 'fade',
               directionNavHide: false,
               pauseTime:5000,
+            });
+
+    $('#codemountain-slider').nivoSlider({
+              effect: 'fade',
+              directionNavHide: false,
+              manualAdvance: true
+            });
+
+    $('#pixemo-slider').nivoSlider({
+              effect: 'fade',
+              directionNavHide: false,
+              manualAdvance: true
+            });
+
+    $('#envision-slider').nivoSlider({
+              effect: 'fade',
+              directionNavHide: false,
+              manualAdvance: true
+            });
+
+    $('#uqp-slider').nivoSlider({
+              effect: 'fade',
+              directionNavHide: false,
+              manualAdvance: true
             });
         
     $('#filters a').click(function() {

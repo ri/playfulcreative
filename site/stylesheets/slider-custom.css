@@ -44,41 +44,52 @@
 /* line 35 */
 .nivo-directionNav a {
   position: absolute;
-  top: 150px;
+  top: 0px;
   display: block;
-  width: 45px;
-  height: 85px;
-  background: url(/images/arrows.png) no-repeat;
+  width: 400px;
+  height: 430px;
   text-indent: -9999px;
   border: 0;
 }
-/* line 45 */
-.nivo-directionNav a:hover {
+/* line 44 */
+.nivo-directionNav a .arrow {
+  position: absolute;
+  background: url(/images/arrows.png) no-repeat;
+  width: 45px;
+  height: 85px;
+  top: 150px;
+}
+/* line 53 */
+.nivo-directionNav a:hover .arrow {
   background-position: 0 -85px;
 }
 
-/* line 50 */
+/* line 59 */
 a.nivo-nextNav {
-  background-position: -45px 0;
   right: -45px;
 }
-/* line 54 */
-a.nivo-nextNav:hover {
+/* line 62 */
+a.nivo-nextNav .arrow {
+  right: 0px;
+  background-position: -45px 0;
+}
+/* line 67 */
+a.nivo-nextNav:hover .arrow {
   background-position: -45px -85px;
 }
 
-/* line 58 */
+/* line 72 */
 a.nivo-prevNav {
   left: -45px;
 }
 
-/* line 62 */
+/* line 76 */
 .nivo-caption {
   text-shadow: none;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 66 */
+/* line 80 */
 .nivo-caption a {
   color: #efe9d1;
   text-decoration: underline;

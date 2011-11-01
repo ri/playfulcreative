@@ -1,21 +1,28 @@
-#slider {
+.sliderwrapper {
+	-moz-box-shadow: 2px 2px 5px #A8A8A8;
+	-webkit-box-shadow: 2px 2px 5px #A8A8A8;
+	box-shadow: 2px 2px 5px #A8A8A8;
+	margin: 0 auto;
+	background: url('/images/darkbgtex.png');
+	position: relative;
+}
+
+.slider {
+	position: relative;
 	background:url(/images/loading.gif) no-repeat 50% 50%;
 }
-#slider img {
+.slider img {
 	position:absolute;
 	top:0px;
 	left:0px;
 	display:none;
 }
-#slider a {
-	border:0;
-	display:block;
-}
+
 
 .nivo-controlNav {
 	position:absolute;
-	bottom: -30px;
-	left: 400px;
+	bottom: -10px;
+	left: 45%;
 }
 .nivo-controlNav a {
 	display:block;
@@ -34,34 +41,69 @@
 .nivo-directionNav {
   a {
     position: absolute;
-    top: 150px;
+    top: 0px;
   	display:block;
-  	width:45px;
-  	height:85px;
-  	background:url(/images/arrows.png) no-repeat;
-  	text-indent:-9999px;
+  	width:400px;
+  	height:430px;
+		text-indent:-9999px;
   	border:0;
   	
+		.arrow {
+			position: absolute;
+			background:url(/images/arrows.png) no-repeat;
+			width: 45px;
+			height: 85px;
+			top: 150px;
+		}
+		
   	&:hover {
-  	background-position: 0 -85px;
-	  }
-  }
+			.arrow{
+				background-position: 0 -85px;
+  		}
+		}
+	}
 }
 a.nivo-nextNav {
-	background-position:-45px 0;
 	right:-45px;
 	
-	&:hover {
+	.arrow {
+		right: 0px;
+		background-position:-45px 0;
+	}
+	
+	&:hover .arrow{
 	background-position: -45px -85px;
   }
+
 }
 a.nivo-prevNav {
-	left:-45px;
+	left: -45px;
 }
 
 .nivo-caption {
-    text-shadow:none;
-    font-family: Helvetica, Arial, sans-serif;
+	background-color: #f3f3f3;
+  filter: alpha(opacity=30);
+  -moz-opacity:0.3;
+	-webkit-opacity:0.3;
+  opacity: 0.3;
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 470px;
+	height: 240px;
+	padding: 10px 15px;
+	z-index: 20;
+  -moz-transition: opacity 0.4s linear;
+	-webkit-transition: -webkit-opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+	
+	&:hover {
+		filter: alpha(opacity=90);
+	  -moz-opacity:0.9;
+		-webkit-opacity:0.9;
+	  opacity: 0.9;
+	}
 }
 .nivo-caption a { 
     color:#efe9d1;

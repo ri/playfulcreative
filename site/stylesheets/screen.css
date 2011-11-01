@@ -92,7 +92,7 @@ body nav#main ul li a span {
   position: absolute;
 }
 /* line 104 */
-body nav#main ul li a.visual {
+body nav#main ul li a.projects {
   background-color: #cc2a41;
   height: 110px;
   width: 220px;
@@ -103,7 +103,7 @@ body nav#main ul li a.visual {
   border-radius: 0 0 110px 110px;
 }
 /* line 114 */
-body nav#main ul li a.visual:hover, body nav#main ul li a.visual:focus {
+body nav#main ul li a.projects:hover, body nav#main ul li a.projects:focus {
   -o-border-radius: 0 0 121.0px 121.0px;
   -moz-border-radius: 0 0 121.0px 121.0px;
   -webkit-border-radius: 0 0 121.0px 121.0px;
@@ -112,12 +112,12 @@ body nav#main ul li a.visual:hover, body nav#main ul li a.visual:focus {
   width: 242.0px;
 }
 /* line 123 */
-body nav#main ul li a.visual span {
+body nav#main ul li a.projects span {
   top: 10px;
-  left: 24px;
+  left: 20%;
 }
 /* line 125 */
-body nav#main ul li a.interaction {
+body nav#main ul li a.process {
   background-color: #424254;
   height: 80px;
   width: 160px;
@@ -128,7 +128,7 @@ body nav#main ul li a.interaction {
   border-radius: 0 0 80px 80px;
 }
 /* line 136 */
-body nav#main ul li a.interaction:hover, body nav#main ul li a.interaction:focus {
+body nav#main ul li a.process:hover, body nav#main ul li a.process:focus {
   -o-border-radius: 0 0 92px 92px;
   -moz-border-radius: 0 0 92px 92px;
   -webkit-border-radius: 0 0 92px 92px;
@@ -137,12 +137,12 @@ body nav#main ul li a.interaction:hover, body nav#main ul li a.interaction:focus
   width: 184px;
 }
 /* line 145 */
-body nav#main ul li a.interaction span {
+body nav#main ul li a.process span {
   top: 10px;
-  left: 30%;
+  left: 35%;
 }
 /* line 148 */
-body nav#main ul li a.inspiration {
+body nav#main ul li a.visual {
   background-color: #64908a;
   height: 130px;
   width: 260px;
@@ -153,7 +153,7 @@ body nav#main ul li a.inspiration {
   border-radius: 0 0 130px 130px;
 }
 /* line 158 */
-body nav#main ul li a.inspiration:hover, body nav#main ul li a.inspiration:focus {
+body nav#main ul li a.visual:hover, body nav#main ul li a.visual:focus {
   -o-border-radius: 0 0 143px 143px;
   -moz-border-radius: 0 0 143px 143px;
   -webkit-border-radius: 0 0 143px 143px;
@@ -162,7 +162,7 @@ body nav#main ul li a.inspiration:hover, body nav#main ul li a.inspiration:focus
   width: 273px;
 }
 /* line 167 */
-body nav#main ul li a.inspiration span {
+body nav#main ul li a.visual span {
   top: 10px;
   left: 120px;
 }
@@ -364,11 +364,11 @@ body footer ul li.twitter a span {
   /* home page */
   /*end h1*/
   /*end home page*/
+  /* projects */
+  /* end projects*/
+  /* process */
+  /* end process */
   /* visual */
-  /* end visual*/
-  /* interaction */
-  /* end interaction */
-  /* inspiration */
   /* about */
   /* end about */
 }
@@ -460,47 +460,47 @@ body footer ul li.twitter a span {
   height: 110px;
 }
 /* line 437 */
-#main section#interaction nav {
+#main section#process nav {
   text-align: center;
   margin-bottom: 10px;
 }
 /* line 442 */
-#main section#interaction h2 {
+#main section#process h2 {
   color: #cc2a41;
 }
 /* line 446 */
-#main section#interaction h3 {
+#main section#process h3 {
   font-family: 'PetitaMedium';
   font-size: 20pt;
   color: #64908a;
 }
 /* line 453 */
-#main section#interaction section#projects h3 {
+#main section#process section#projects h3 {
   font-size: 24pt;
   clear: both;
 }
 /* line 457 */
-#main section#interaction section#projects .project {
+#main section#process section#projects .project {
   background: url("/images/loading.gif") no-repeat 50% 50%;
 }
 /* line 459 */
-#main section#interaction section#projects .project a span {
+#main section#process section#projects .project a span {
   background-color: #424254;
   font-family: "PetitaBold";
   font-weight: normal;
 }
 /* line 465 */
-#main section#interaction section#projects .description {
+#main section#process section#projects .description {
   clear: both;
 }
 /* line 467 */
-#main section#interaction section#projects .description p {
+#main section#process section#projects .description p {
   line-height: 1.4em;
   font-size: 1.2em;
   margin-bottom: 1em;
 }
 /* line 480 */
-#main section#inspiration p {
+#main section#visual p {
   text-align: center;
 }
 /* line 487 */

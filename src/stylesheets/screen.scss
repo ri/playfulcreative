@@ -1,23 +1,23 @@
-@import "global.scss";
+@import "global";
 
 /*bubble values*/
-$visual-whole: 220px;
+$projects-whole: 220px;
+$projects-half: $projects-whole/2;
+$projects-border-values: 0 0 $projects-half $projects-half;
+$projects-border-values-big: 0 0 ($projects-half*1.1) ($projects-half*1.1);
+$projects-margin: 0px;
+
+$process-whole: 160px;
+$process-half: $process-whole/2;
+$process-border-values: 0 0 $process-half $process-half;
+$process-border-values-big: 0 0 ($process-half*1.15) ($process-half*1.15);
+$process-margin: -80px;
+
+$visual-whole: 260px;
 $visual-half: $visual-whole/2;
 $visual-border-values: 0 0 $visual-half $visual-half;
 $visual-border-values-big: 0 0 ($visual-half*1.1) ($visual-half*1.1);
-$visual-margin: 0px;
-
-$interaction-whole: 160px;
-$interaction-half: $interaction-whole/2;
-$interaction-border-values: 0 0 $interaction-half $interaction-half;
-$interaction-border-values-big: 0 0 ($interaction-half*1.15) ($interaction-half*1.15);
-$interaction-margin: -80px;
-
-$inspiration-whole: 260px;
-$inspiration-half: $inspiration-whole/2;
-$inspiration-border-values: 0 0 $inspiration-half $inspiration-half;
-$inspiration-border-values-big: 0 0 ($inspiration-half*1.1) ($inspiration-half*1.1);
-$inspiration-margin: -80px;
+$visual-margin: -80px;
 
 $about-whole: 200px;
 $about-half: $about-whole/2;
@@ -26,8 +26,8 @@ $about-border-values-big: 0 0 ($about-half*1.1) ($about-half*1.1);
 $about-margin: -90px;
 
 $email-whole: 240px;
-$email-half: $inspiration-whole/2;
-$email-border-values: $inspiration-half $inspiration-half 0 0;
+$email-half: $visual-whole/2;
+$email-border-values: $visual-half $visual-half 0 0;
 $email-margin: 0px;
 
 $twitter-whole: 160px;
@@ -35,6 +35,12 @@ $twitter-half: $twitter-whole/2;
 $twitter-border-values: $twitter-half $twitter-half 0 0;
 $twitter-margin: -50px;
 /*bubble values*/
+
+/*slider sizes*/
+$slider-width: 890px;
+$slider-height: 480px;
+$projects-slider-margin: 25px;
+$index-slider-margin: 15px;
 
 /* global layout*/
 body {
@@ -74,11 +80,11 @@ body {
           size: 2.2em;
           weight: normal; }
       }
-      img {display:inline; margin-top: 30px;}
+      img {display:inline; margin-top: 30px; width: 68px; height: 80px}
       &:hover { color: $red;}
     } /* end a */
   }/* end header*/
-  
+
   nav#main {
     float: right;
     ul {
@@ -101,67 +107,67 @@ body {
           
           span {display: block; position: absolute;}
           
-          &.visual {
+          &.projects {
             background-color: $red;
-            height: $visual-half;
-            width: $visual-whole;
-            margin-left: $visual-margin;
+            height: $projects-half;
+            width: $projects-whole;
+            margin-left: $projects-margin;
             z-index: 1;
-            -moz-border-radius: $visual-border-values;
-            -webkit-border-radius: $visual-border-values;
-            border-radius: $visual-border-values;
+            -moz-border-radius: $projects-border-values;
+            -webkit-border-radius: $projects-border-values;
+            border-radius: $projects-border-values;
 
              &:hover, &:focus  {
-              -o-border-radius: $visual-border-values-big;
-              -moz-border-radius: $visual-border-values-big;
-              -webkit-border-radius: $visual-border-values-big;
-              border-radius: $visual-border-values-big;
-              height: $visual-half * 1.1;
-              width: $visual-whole * 1.1;
+              -o-border-radius: $projects-border-values-big;
+              -moz-border-radius: $projects-border-values-big;
+              -webkit-border-radius: $projects-border-values-big;
+              border-radius: $projects-border-values-big;
+              height: $projects-half * 1.1;
+              width: $projects-whole * 1.1;
              }
              
-             span {top: 10px; left: 24px;}
+             span {top: 10px; left: 20%;}
           }
-          &.interaction {
+          &.process {
             background-color: $grey-dark-blue;
-            height: $interaction-half;
-            width: $interaction-whole;
-            margin-left: $interaction-margin;
+            height: $process-half;
+            width: $process-whole;
+            margin-left: $process-margin;
             z-index: 10;
-            -moz-border-radius: $interaction-border-values;
-            -webkit-border-radius: $interaction-border-values;
-            border-radius: $interaction-border-values;
+            -moz-border-radius: $process-border-values;
+            -webkit-border-radius: $process-border-values;
+            border-radius: $process-border-values;
             
 
             &:hover, &:focus  {
-              -o-border-radius: $interaction-border-values-big;
-              -moz-border-radius: $interaction-border-values-big;
-              -webkit-border-radius: $interaction-border-values-big;
-              border-radius: $interaction-border-values-big;
-              height: $interaction-half * 1.15;
-              width: $interaction-whole * 1.15;
+              -o-border-radius: $process-border-values-big;
+              -moz-border-radius: $process-border-values-big;
+              -webkit-border-radius: $process-border-values-big;
+              border-radius: $process-border-values-big;
+              height: $process-half * 1.15;
+              width: $process-whole * 1.15;
             }
             
-            span {top: 10px; left: 30%;}
+            span {top: 10px; left: 35%;}
              
            }
-           &.inspiration {
+           &.visual {
              background-color: $teal;
-             height: $inspiration-half;
-             width: $inspiration-whole;      
-             margin-left: $inspiration-margin;
+             height: $visual-half;
+             width: $visual-whole;      
+             margin-left: $visual-margin;
              z-index: 2;
-             -moz-border-radius: $inspiration-border-values;
-             -webkit-border-radius: $inspiration-border-values;
-             border-radius: $inspiration-border-values;
+             -moz-border-radius: $visual-border-values;
+             -webkit-border-radius: $visual-border-values;
+             border-radius: $visual-border-values;
               
              &:hover, &:focus  {
-                 -o-border-radius: $inspiration-border-values-big;
-                 -moz-border-radius: $inspiration-border-values-big;
-                 -webkit-border-radius: $inspiration-border-values-big;
-                 border-radius: $inspiration-border-values-big;
-                 height: $inspiration-half * 1.1;
-                 width: $inspiration-whole * 1.05;
+                 -o-border-radius: $visual-border-values-big;
+                 -moz-border-radius: $visual-border-values-big;
+                 -webkit-border-radius: $visual-border-values-big;
+                 border-radius: $visual-border-values-big;
+                 height: $visual-half * 1.1;
+                 width: $visual-whole * 1.05;
                }
                
                span {top: 10px; left: 120px;}
@@ -369,20 +375,19 @@ body {
   .highlight { font-size: 1.7em;}
     
   } /*end h1*/
-  #sliderwrapper {
-    width: 890px;
-    height: 480px;
+  .sliderwrapper {
+    width: $slider-width;
+    height: $slider-height;
     margin: 0 auto;
     padding-top: 1px;
     margin-bottom: 80px;
     background: url('/images/darkbgtex.png');
-    section {
-      position: relative;
-      margin: 15px;
-      width: 860px;
-      height: 430px;
-      background:url('/images/loading.gif') no-repeat 50% 50%;
+    .slider {
+      margin: $index-slider-margin;
+      width: $slider-width - ($index-slider-margin * 2);
+      height: $slider-height - ($index-slider-margin * 2);
     }
+
   }  
   /*end home page*/
   
@@ -431,9 +436,138 @@ body {
     }
   }
   /* end visual*/
-  
-  /* interaction */
-  section#interaction {
+
+  /* projects */
+	section#projects {
+		
+		section:nth-child(even) {
+			h3 {
+			background: url('/images/teal-tab.png') no-repeat;
+			}
+		}
+		
+		section:nth-child(odd) {
+			h3 {
+			background: url('/images/red-tab.png') no-repeat;
+			}
+		}
+		
+		section.project {
+			position: relative;
+			h3 {
+				width: 208px;
+				height: 72px;
+				color: #f5f5f5;
+				position: absolute;
+				z-index: 10;
+				top: -10px;
+				left: 60px;
+				line-height: 2em;
+				font-family: LeagueGothic;
+				font-size: 28pt;
+				text-align: center;
+			}
+		}
+		
+		#envision-slider {
+			p {
+				font-size: 11pt;
+				margin-bottom: 0.5em;
+			}
+			h4 {
+				font-size: 1.4em;
+			}
+		}
+		
+		.sliderwrapper {
+			margin: 0 auto;
+	    width: $slider-width;
+	    height: $slider-height;
+	    margin-bottom: 80px;
+
+			.slider {
+	      margin: $projects-slider-margin;
+	      width: $slider-width - ($projects-slider-margin * 2);
+	      height: $slider-height - ($projects-slider-margin * 2);
+				padding: 0;
+			}
+			
+			.nivo-controlNav {
+				bottom: -($projects-slider-margin - 10);
+			}
+			
+			.nivo-directionNav {
+					.arrow {
+						background:url(/images/arrows-wide.png) no-repeat;
+						width: 55px;
+					}
+					
+					a:hover {
+						.arrow{
+							background-position: 0 -85px;
+			  		}
+					}
+			}
+			
+			a.nivo-nextNav {
+				right:-55px;
+
+				.arrow {
+					right: 0px;
+					background-position:-55px 0;
+				}
+
+				&:hover .arrow{
+				background-position: -55px -85px;
+			  }
+
+			}
+			a.nivo-prevNav {
+				left: -55px;
+			}
+			
+			
+			h4 {
+				font-family: PetitaMedium;
+				font-weight: normal;
+				font-size: 18pt;
+				margin: 0.4em 0;
+			}
+			a {
+				font-size: inherit;
+				color: $red;
+				
+				&:visited {
+					color: $teal;
+				}
+				
+				&:visited:hover, &:hover {
+					color: darken($teal,20%);
+				}
+			}
+			
+			p {				
+				strong {
+					font-family: PetitaMedium;
+					font-weight: normal;
+				}
+				small {
+					font-size: 0.8em;
+				}
+				
+				color: #3a3a3a;
+				line-height: 1.5em;
+				font-size: 12pt;
+				font-family:PetitaLight;
+				margin: 0 0 0.2em 0;
+				padding: 0;
+			}
+		}
+	}
+	/*end projects */
+	
+  /* process */
+  section#process {
     nav {
       text-align: center;
       margin-bottom: 10px;
@@ -448,35 +582,11 @@ body {
       font-size: 20pt;
       color: $teal;
     }
-    
-    section#projects {
-      h3 {
-        font-size: 24pt;
-        clear: both;
-      }
-      .project {
-        background: url("/images/loading.gif") no-repeat 50% 50%;
-        a span {
-          background-color: $grey-dark-blue;
-          font-family: "PetitaBold";
-          font-weight: normal;
-        }
-      }
-      .description {
-        clear: both;
-        p {
-          line-height: 1.4em;
-          font-size: 1.2em;
-          margin-bottom: 1em;
-        }
-
-      }
-    }
   }
-  /* end interaction */
+  /* end process */
   
-  /* inspiration */
-  section#inspiration {
+  /* visual */
+  section#visual {
     p {text-align: center;}
   }
   
