@@ -37,6 +37,12 @@ $(document).ready(function() {
               directionNavHide: false,
               manualAdvance: true
             });
+
+    $('#designaday-slider').nivoSlider({
+              effect: 'fade',
+              directionNavHide: false,
+              manualAdvance: true
+            });
         
     $('#filters a').click(function() {
       var selector = $(this).attr('data-filter');
